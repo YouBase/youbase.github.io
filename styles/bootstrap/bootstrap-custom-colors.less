@@ -1,0 +1,68 @@
+.btn {
+  &.btn-default{
+	  .bg-bootstrap-normal;
+	  &:hover{
+		.bg-bootstrap-hard;
+	  }
+  }
+}
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+	.bg-bootstrap-hard-hard;
+}
+.list-group{
+	.list-group-item{
+		.bg-bootstrap-normal;
+		&:hover{
+			.bg-bootstrap-hard;
+		}
+	}
+}
+.widget-tabs{
+	.bg-bootstrap-hard;
+}
+.btn {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 0;
+  &:active, &:focus{
+	  outline: none;
+  }
+}
+.btn{
+	outline-color: transparent;
+}
+.list-group{
+	.list-group-item{
+		i{
+			color: inherit;
+		}
+	}
+}
+.popover{
+	@popover-bg: rgba(0, 0, 0, 0.6);
+	color: #efefef;
+	background-color: @popover-bg;
+	&.top>.arrow:after {
+		border-top-color: @popover-bg;
+	}
+	&.bottom>.arrow:after {
+		border-bottom-color: @popover-bg;
+	}
+	&.left>.arrow:after {
+		border-left-color: @popover-bg;
+	}
+	&.right>.arrow:after {
+		border-right-color: @popover-bg;
+	}
+}

@@ -1,0 +1,20 @@
+/*** Overlays ***/
+.page-overlay{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	.transition(~"all 0.5s ease-in-out");
+	opacity: 0;
+	z-index: 1030;
+	visibility: hidden;
+	&.show{
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 1;
+		visibility: visible;
+	}
+}

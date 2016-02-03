@@ -1,0 +1,54 @@
+/*** Help Pages ***/
+@min-help-toc-padding: @state1-h + 40px;
+.help-toc-titles{
+	font-size: 11px;
+	padding-top: @min-help-toc-padding;
+	padding-bottom: @min-help-toc-padding + 135px;
+	padding-right: 35px;
+	&>div{
+		text-align: right;
+	}
+	h1{
+		font-size: 65px;
+		font-weight: @fw-800;
+		line-height: 1;
+		text-align: right;
+		margin: 0;
+		text-transform: none;
+	}
+	.help-toc-title{
+		border-bottom: 1px solid;
+		font-size: 30px;
+		font-weight: @fw-600;
+		line-height: 1;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+}
+.help-toc{
+	padding-left: 35px;
+	padding-top: @min-help-toc-padding;
+	padding-bottom: @min-help-toc-padding;
+	@media (max-width: 767px) {
+		padding-top: @state2-h + 20px;
+	}
+	h1{
+		font-weight: @fw-800;
+		text-transform: none;
+		span{
+			font-weight: @fw-400;
+		}
+	}
+}
+
+.help-credits ul{
+	padding: 0;
+	text-align: center;
+	li{
+		list-style: none;
+		display: block;
+		font-weight: @fw-500;
+		line-height: 34px;
+		letter-spacing: 1px;
+	}
+}

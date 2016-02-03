@@ -1,0 +1,44 @@
+/*** Bootstrap Elements ***/
+ul.pagination{
+	a{
+		.transition(~"all 0.5s");
+	}
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+	font-size: 0;
+	li{
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 13px;
+	}
+}
+.pagination > li > a, .pagination > li > span{
+	line-height: 22px;
+	font-size: 13px;
+}
+.lead{
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 40px;
+	line-height: 24px;
+	&.text-left{
+		text-align: left;
+	}
+	&.text-right{
+		text-align: right;
+	}
+}
+.widget-tabs{
+	border-radius: 4px 4px 0 0;
+}
+.panel>.list-group {
+	border-top: 1px solid;
+	.list-group-item{
+		border-width: 0 0 1px 0;
+		margin-bottom: 0;
+	}
+}
+.dropdown-menu{
+	border: none;
+}

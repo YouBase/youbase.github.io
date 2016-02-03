@@ -1,0 +1,390 @@
+@import "description.less";
+@import "colors.less";
+@import "../colors/mixins.less";
+
+.color-scheme(@letter, @background, @heading, @text, @highlight, @link, @out){
+	.scheme-vars(){
+		@out-lite: @out + ((100% - @out)/2.33);
+		@out-lite-lite: @out + ((100% - @out)/1.4);
+		@out-hard: @out/3;
+		@out-hard-hard: @out/5;
+		@bg: fadeout(@background, @out);
+		@bg-lite: fadeout(@background, @out-lite);
+		@bg-lite-lite: fadeout(@background, @out-lite-lite);
+		@bg-hard: fadeout(@background, @out-hard);
+		@bg-hard-hard: fadeout(@background, @out-hard-hard);
+	}
+	.text-@{letter} {
+		color: @text;
+	}
+	.background-0-@{letter} {
+		background-color: transparent !important;
+	}
+	.background-5-@{letter} {
+		background-color: fadeout(@background, 95%) !important;
+	}
+	.background-10-@{letter} {
+		background-color: fadeout(@background, 90%) !important;
+	}
+	.background-15-@{letter} {
+		background-color: fadeout(@background, 85%) !important;
+	}
+	.background-20-@{letter} {
+		background-color: fadeout(@background, 80%) !important;
+	}
+	.background-25-@{letter} {
+		background-color: fadeout(@background, 75%) !important;
+	}
+	.background-30-@{letter} {
+		background-color: fadeout(@background, 70%) !important;
+	}
+	.background-35-@{letter} {
+		background-color: fadeout(@background, 65%) !important;
+	}
+	.background-40-@{letter} {
+		background-color: fadeout(@background, 60%) !important;
+	}
+	.background-45-@{letter} {
+		background-color: fadeout(@background, 55%) !important;
+	}
+	.background-50-@{letter} {
+		background-color: fadeout(@background, 50%) !important;
+	}
+	.background-55-@{letter} {
+		background-color: fadeout(@background, 45%) !important;
+	}
+	.background-60-@{letter} {
+		background-color: fadeout(@background, 40%) !important;
+	}
+	.background-65-@{letter} {
+		background-color: fadeout(@background, 35%) !important;
+	}
+	.background-70-@{letter} {
+		background-color: fadeout(@background, 30%) !important;
+	}
+	.background-75-@{letter} {
+		background-color: fadeout(@background, 25%) !important;
+	}
+	.background-80-@{letter} {
+		background-color: fadeout(@background, 20%) !important;
+	}
+	.background-85-@{letter} {
+		background-color: fadeout(@background, 15%) !important;
+	}
+	.background-90-@{letter} {
+		background-color: fadeout(@background, 10%) !important;
+	}
+	.background-95-@{letter} {
+		background-color: fadeout(@background, 5%) !important;
+	}
+	.background-100-@{letter} {
+		background-color: @background !important;
+	}
+	.background-@{letter} {
+		.scheme-vars();
+		background-color: @bg !important;
+	}
+	.background-lite-@{letter} {
+		.scheme-vars();
+		background-color: @bg-lite !important;
+	}
+	.background-lite-lite-@{letter} {
+		.scheme-vars();
+		background-color: @bg-lite-lite !important;
+	}
+	.background-hard-@{letter} {
+		.scheme-vars();
+		background-color: @bg-hard !important;
+	}
+	.background-hard-hard-@{letter} {
+		.scheme-vars();
+		background-color: @bg-hard-hard !important;
+	}
+	.border-background-@{letter} {
+		border-color: fadeout(@background, 30%) !important;
+	}
+	.border-text-@{letter} {
+		border-color: fadeout(@text, 30%) !important;
+	}
+	.border-highlight-@{letter} {
+		border-color: fadeout(@highlight, 30%) !important;
+	}
+	.border-heading-@{letter} {
+		border-color: fadeout(@heading, 30%) !important;
+	}
+	.border-link-@{letter} {
+		border-color: fadeout(@link, 30%) !important;
+	}
+	.heading-@{letter} {
+		color: @heading !important;
+	}
+	.text-@{letter} {
+		color: @text !important;
+	}
+	.text-background-@{letter} {
+		color: @background !important;
+	}
+	.background-highlight-@{letter} {
+		background-color: @highlight  !important;
+	}
+	.background-heading-@{letter} {
+		background-color: @heading  !important;
+	}
+	.background-text-@{letter} {
+		background-color: @text  !important;
+	}
+	.background-link-@{letter} {
+		background-color: @link  !important;
+	}
+	.highlight-@{letter} {
+		color: @highlight !important;
+	}
+	.link-@{letter} {
+		color: @link !important;
+	}
+	.colors-@{letter} {
+		@import "elements.less";
+		@import "top-nav.less";
+		@import "menu-toggle.less";
+		@import "counter.less";
+		@import "sliders.less";
+		@import "gallery.less";
+		@import "icon.less";
+		@import "tcircle.less";
+		@import "process.less";
+		@import "dot-scroll.less";
+		@import "skew.less";
+		@import "loading.less";
+		@import "blog.less";
+		@import "sidebar.less";
+		@import "bootstrap.less";
+		@import "decorations.less";
+		@import "skillbar.less";
+		@import "examples.less";
+		@import "help.less";
+		.scheme-vars();
+		.bg(){
+			background-color: @bg;
+		}
+		.bg-lite(){
+			background-color: @bg-lite;
+		}
+		.bg-hard(){
+			background-color: @bg-hard;
+		}
+		.bg-transparent(){
+			background-color: transparent;
+		}
+		.bg-color{
+			color: @background;
+		}
+		.out{
+			opacity: 1 - unit(@out)/100;
+		}
+		.border, &.border,
+		.border-top, &.border-top,
+		.border-left, &.border-left,
+		.border-right, &.border-right,
+		.border-bottom, &.border-bottom{
+			border-color: fadeout(@heading, 70%) !important;
+		}
+		.border-hard, &.border-hard{
+			border-color: fadeout(@heading, 30%) !important;
+		}
+		.border-lite, &.border-lite{
+			border-color: fadeout(@heading, 92%) !important;
+		}
+		color: @text;
+		.bg;
+		.heading, &.heading{
+			color: @heading;
+		}
+		.text{
+			color: @text !important;
+		}
+		.link, &.link{
+			color: @link;
+		}
+		.highlight, &.highlight{
+			color: @highlight;
+		}
+		.text-background, &.text-background {
+			color: @background !important;
+		}
+		.background-highlight, &.background-highlight{
+			background-color: @highlight !important;
+		}
+		.background-heading, &.background-heading{
+			background-color: @heading !important;
+		}
+		.background-text, &.background-text{
+			background-color: @text !important;
+		}
+		.background-link, &.background-link{
+			background-color: @link !important;
+		}
+		.border-text, &.border-text {
+			border-color: fadeout(@text, 30%) !important;
+		}
+		.border-highlight, &.border-highlight {
+			border-color: fadeout(@highlight, 30%) !important;
+		}
+		.border-heading, &.border-heading {
+			border-color: fadeout(@heading, 30%) !important;
+		}
+		.border-link, &.border-link {
+			border-color: fadeout(@link, 30%) !important;
+		}
+		.background-0, &.background-0{
+			background-color: transparent !important;
+		}
+		.background-5, &.background-5{
+			background-color: fadeout(@background, 95%) !important;
+		}
+		.background-10, &.background-10{
+			background-color: fadeout(@background, 90%) !important;
+		}
+		.background-15, &.background-15{
+			background-color: fadeout(@background, 85%) !important;
+		}
+		.background-20, &.background-20{
+			background-color: fadeout(@background, 80%) !important;
+		}
+		.background-25, &.background-25{
+			background-color: fadeout(@background, 75%) !important;
+		}
+		.background-30, &.background-30{
+			background-color: fadeout(@background, 70%) !important;
+		}
+		.background-35, &.background-35{
+			background-color: fadeout(@background, 65%) !important;
+		}
+		.background-40, &.background-40{
+			background-color: fadeout(@background, 60%) !important;
+		}
+		.background-45, &.background-45{
+			background-color: fadeout(@background, 55%) !important;
+		}
+		.background-50, &.background-50{
+			background-color: fadeout(@background, 50%) !important;
+		}
+		.background-55, &.background-55{
+			background-color: fadeout(@background, 45%) !important;
+		}
+		.background-60, &.background-60{
+			background-color: fadeout(@background, 40%) !important;
+		}
+		.background-65, &.background-65{
+			background-color: fadeout(@background, 35%) !important;
+		}
+		.background-70, &.background-70{
+			background-color: fadeout(@background, 30%) !important;
+		}
+		.background-75, &.background-75{
+			background-color: fadeout(@background, 25%) !important;
+		}
+		.background-80, &.background-80{
+			background-color: fadeout(@background, 20%) !important;
+		}
+		.background-85, &.background-85{
+			background-color: fadeout(@background, 15%) !important;
+		}
+		.background-90, &.background-90{
+			background-color: fadeout(@background, 10%) !important;
+		}
+		.background-95, &.background-95{
+			background-color: fadeout(@background, 5%) !important;
+		}
+		.background-100, &.background-100{
+			background-color: @background !important;
+		}
+		.background, &.background{
+			background-color: @bg;
+		}
+		.background-solid, &.background-solid{
+			background-color: @background;
+		}
+		.background-hard, &.background-hard{
+			.bg-hard();
+		}
+		.background-lite, &.background-lite{
+			.bg-lite();
+		}
+		h1, h2, h3, h4, h5, h6, .col-icon{
+			.heading;
+		}
+		.col-left-marginalia, col-right-marginalia{
+			.heading;
+		}
+		a, a&{
+			color: @link;
+			&:hover{
+				color: fadeout(@link, 25%);
+			}
+		}
+		.line{
+			border-color: @text;
+			border-color: fadeout(@text, 70%);
+			&:hover{
+				.bg-lite;
+			}
+		}
+		.help-block{
+			li{
+				.highlight;
+			}
+		}
+		.grid-example{
+			&>.row{
+				&>div{
+					&:nth-child(1n){
+						.heading;
+						background-color: @bg;
+						background-color: fadeout(@text, 90%);
+					}
+					&:nth-child(2n){
+						.heading;
+						background-color: @bg;
+						background-color: fadeout(@text, 70%);
+					}
+				}
+			}
+		}
+		@place-holder-out: 40%;
+		::-webkit-input-placeholder {
+			color: fadeout(@text, @place-holder-out);
+		}
+		:-moz-placeholder {
+			color: fadeout(@text, @place-holder-out);
+			opacity:  1;
+		}
+		::-moz-placeholder {
+			color: fadeout(@text, @place-holder-out);
+			opacity:  1;
+		}
+		:-ms-input-placeholder {
+			color: fadeout(@text, @place-holder-out);
+		}
+	}
+}
+/*** Additional Colors ***/
+.background-transparent{
+	background-color: transparent !important;
+}
+.primary{
+	background-color: fadeout(@primary-bg, @primary-out);
+}
+.success{
+	background-color: fadeout(@success-bg, @success-out);
+}
+.info{
+	background-color: fadeout(@info-bg, @info-out);
+}
+.warning{
+	background-color: fadeout(@warning-bg, @warning-out);
+}
+.danger{
+	background-color: fadeout(@danger-bg, @danger-out);
+}
+/*** Scroll Bars ***/
+@import "scroll-bar.less";

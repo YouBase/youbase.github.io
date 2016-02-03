@@ -1,0 +1,24 @@
+#dot-scroll&{
+	li{
+		a{
+			span{
+				background-color: @text;
+			}
+			&.active, &:hover.active{
+				span{
+					background-color: @bg;
+				}
+			}
+			&.target, &:hover.target{
+				span{
+					border-color: @text;
+				}
+			}
+			&.active, &:hover.active, &.target.active, &:hover.target.active{
+				span{
+					border-color: @text;
+				}
+			}
+		}
+	}
+}

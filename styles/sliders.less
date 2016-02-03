@@ -1,0 +1,84 @@
+/*** Sliders ***/
+.slider, .carousel{
+	cursor: grab !important;
+	cursor: -moz-grab !important;
+	cursor: -webkit-grab !important;
+	&>div{
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	.slick-prev, .slick-next{
+		top: 50%;
+		margin: -35px 0 0 0;
+		padding: 20px 5px;
+		width: 21px;
+		height: 70px;
+		overflow: hidden;
+		font-size: 0;
+		&:before {
+			font-size: 30px;
+			display: inline-block;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+	}
+	.slick-prev{
+		left: 0;
+		.border-top-right-radius(5px);
+		.border-bottom-right-radius(5px);
+		.border-top-left-radius(0px);
+		.border-bottom-left-radius(0px);
+		&:before {
+			content: "\f104";
+		}
+	}
+	.slick-next{
+		right: 0;
+		.border-top-left-radius(5px);
+		.border-bottom-left-radius(5px);
+		.border-top-right-radius(0px);
+		.border-bottom-right-radius(0px);
+		&:before {
+			content: "\f105";
+		}
+	}
+	.title{
+		font-size: 22px;
+		margin-top: 4px;
+	}
+	.subtitle{
+		font-size: 14px !important;
+		line-height: 20px !important;
+		padding-bottom: 10px;
+	}
+}
+.carousel{
+	margin-top: 33px !important;
+	margin-bottom: 0 !important;
+	.slick-dots{
+		padding-bottom: 5px;
+		bottom: 100%;
+		top: auto;
+		button:before{
+			font-size: 14px;
+		}
+	}
+}
+.slider{
+	margin-top: 0 !important;
+	margin-bottom: 38px !important;
+	.slick-dots{
+		padding-top: 5px;
+		bottom: auto;
+		top: 100%;
+		button:before{
+			font-size: 14px;
+		}
+	}
+}

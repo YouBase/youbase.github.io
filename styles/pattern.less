@@ -1,0 +1,36 @@
+/*** Patterns ***/
+.pattern,
+.pattern-dark-1, .pattern-dark-2, .pattern-dark-3,
+.pattern-light-1, .pattern-light-2, .pattern-light-3{
+	&:before{
+		content: " ";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-repeat: repeat;
+		opacity: .8;
+	}
+}
+.pattern:before{
+	background: url('../images/pattern.png');
+}
+.pattern-dark-1:before{
+	background: url('../images/pattern-dark-1.png');
+}
+.pattern-dark-2:before{
+	background: url('../images/pattern-dark-2.png');
+}
+.pattern-dark-3:before{
+	background: url('../images/pattern-dark-3.png');
+}
+.pattern-light-1:before{
+	background: url('../images/pattern-light-1.png');
+}
+.pattern-light-2:before{
+	background: url('../images/pattern-light-2.png');
+}
+.pattern-light-3:before{
+	background: url('../images/pattern-light-3.png');
+}

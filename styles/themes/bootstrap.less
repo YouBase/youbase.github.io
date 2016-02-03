@@ -1,0 +1,22 @@
+.pagination{
+	.active{
+		a{
+			background-color: fadeout(@heading, 15%);
+			color: @background;
+			&:hover{
+				color: @background;
+			}
+		}
+	}
+	a{
+		background-color: transparent;
+		border-color: fadeout(@heading, 60%) !important;
+		color: @heading;
+		&:hover{
+			color: @highlight;
+		}
+	}
+}
+.panel>.list-group {
+  border-color: fadeout(@heading, 70%);
+}

@@ -1,0 +1,65 @@
+/**************************************************************************
+* Scroll Bars 
+**************************************************************************/
+body, html{
+	.scroll-a;
+}
+textarea, .navbar-collapse, .non-mobile #top-nav, .ext-nav, .overlay-window .content-container{
+	.scroll-a;
+	.ie-scroll-a;
+}
+pre, .example-page{
+	.scroll-b;
+	.ie-scroll-b;
+}
+#customize-panel .options{
+	.scroll-cp;
+	.ie-scroll-cp;
+}
+.scroll-a{
+	.scroll-bar(@e-bg, @e-bg, fadeout(@e-text, 40%), fadeout(@e-text, 40%));
+}
+.scroll-cp{
+	.scroll-bar(#444, #444, #aaa, #aaa);
+}
+.scroll-b{
+	.scroll-bar(@h-bg, @g-bg, fadeout(@g-heading, 40%), fadeout(@g-text, 40%));
+}
+.ie-scroll-a{
+	.ie-scroll-bar(@d-bg, @e-bg, @g-text);
+}
+.ie-scroll-b{
+	.ie-scroll-bar(@g-highlight, @b-bg, @g-text);
+}
+.ie-scroll-cp{
+	.ie-scroll-bar(#333, #555, #efefef);
+}
+.ie-scroll-bar(@ie-scroll-face, @ie-scroll-track, @ie-arrow){
+	scrollbar-face-color: @ie-scroll-face;
+	//scrollbar-base-color: @scroll-face;
+	scrollbar-track-color: @ie-scroll-track;
+	scrollbar-arrow-color: @ie-arrow;
+	scrollbar-highlight-color: @ie-scroll-face;
+	scrollbar-3dlight-color: @ie-scroll-face;
+	scrollbar-shadow-color: @ie-scroll-face;
+	scrollbar-darkshadow-color: @ie-scroll-face; 
+}
+.scroll-bar(@scroll-face, @scroll-track, @scroll-thumb-border, @scroll-track-border){
+	&::-webkit-scrollbar-track {
+		background-color: @scroll-track;
+		border-left: 1px solid @scroll-track-border;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-color: @scroll-thumb-border !important;
+		background-color: @scroll-face;
+		border-radius: 3px;
+	}
+	-ms-overflow-style: scrollbar;
+	&::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+	&::-webkit-scrollbar-thumb {
+		border: 1px solid;
+	}
+}

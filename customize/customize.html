@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MotiOne</title>
+	</head>
+	<body>
+		<!-- BEGIN: Customize Theme panel -->
+		<div id="customize-panel">
+			<div class="options">
+				<div class="title">Customize Panel</div>
+				<div class="themes">
+					<select class="form-control">
+						<option value="">— Predefined Colors —</option>
+					</select>
+				</div>
+				<div class="colors">
+					<div class="row">
+						<div class="col-xs-6 colors-a background-solid">
+							<div class="form-group">
+								<label for="customize-background-a">Background A</label>
+								<input type="text" id="customize-background-a" class="form-control a-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-a">Text A</label>
+								<input type="text" id="customize-text-a" class="form-control a-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-a">Highlight A</label>
+								<input type="text" id="customize-highlight-a" class="form-control a-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-a background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-a">Default Transparency A, %</label>
+								<input type="number" id="customize-transparency-a" class="form-control a-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-a">Heading A</label>
+								<input type="text" id="customize-heading-a" class="form-control a-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-a">Link A</label>
+								<input type="text" id="customize-link-a" class="form-control a-link" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-b background-solid">
+							<div class="form-group">
+								<label for="customize-background-b">Background B</label>
+								<input type="text" id="customize-background-b" class="form-control b-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-b">Text B</label>
+								<input type="text" id="customize-text-b" class="form-control b-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-b">Highlight B</label>
+								<input type="text" id="customize-highlight-b" class="form-control b-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-b background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-b">Default Transparency B, %</label>
+								<input type="number" id="customize-transparency-b" class="form-control b-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-b">Heading B</label>
+								<input type="text" id="customize-heading-b" class="form-control b-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-b">Link B</label>
+								<input type="text" id="customize-link-b" class="form-control b-link" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-c background-solid">
+							<div class="form-group">
+								<label for="customize-background-c">Background C</label>
+								<input type="text" id="customize-background-c" class="form-control c-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-c">Text C</label>
+								<input type="text" id="customize-text-c" class="form-control c-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-c">Highlight C</label>
+								<input type="text" id="customize-highlight-c" class="form-control c-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-c background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-c">Default Transparency C, %</label>
+								<input type="number" id="customize-transparency-c" class="form-control c-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-c">Heading C</label>
+								<input type="text" id="customize-heading-c" class="form-control c-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-c">Link C</label>
+								<input type="text" id="customize-link-c" class="form-control c-link" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-d background-solid">
+							<div class="form-group">
+								<label for="customize-background-d">Background D</label>
+								<input type="text" id="customize-background-d" class="form-control d-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-d">Text D</label>
+								<input type="text" id="customize-text-d" class="form-control d-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-d">Highlight D</label>
+								<input type="text" id="customize-highlight-d" class="form-control d-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-d background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-d">Default Transparency D, %</label>
+								<input type="number" id="customize-transparency-d" class="form-control d-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-d">Heading D</label>
+								<input type="text" id="customize-heading-d" class="form-control d-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-d">Link D</label>
+								<input type="text" id="customize-link-d" class="form-control d-link" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-e background-solid">
+							<div class="form-group">
+								<label for="customize-background-e">Background E</label>
+								<input type="text" id="customize-background-e" class="form-control e-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-e">Text E</label>
+								<input type="text" id="customize-text-e" class="form-control e-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-e">Highlight E</label>
+								<input type="text" id="customize-highlight-e" class="form-control e-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-e background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-e">Default Transparency E, %</label>
+								<input type="number" id="customize-transparency-e" class="form-control e-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-e">Heading E</label>
+								<input type="text" id="customize-heading-e" class="form-control e-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-e">Link E</label>
+								<input type="text" id="customize-link-e" class="form-control e-link" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-f background-solid">
+							<div class="form-group">
+								<label for="customize-background-f">Background F</label>
+								<input type="text" id="customize-background-f" class="form-control f-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-f">Text F</label>
+								<input type="text" id="customize-text-f" class="form-control f-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-f">Highlight F</label>
+								<input type="text" id="customize-highlight-f" class="form-control f-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-f background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-f">Default Transparency F, %</label>
+								<input type="number" id="customize-transparency-f" class="form-control f-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-f">Heading F</label>
+								<input type="text" id="customize-heading-f" class="form-control f-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-f">Link F</label>
+								<input type="text" id="customize-link-f" class="form-control f-link" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-g background-solid">
+							<div class="form-group">
+								<label for="customize-background-g">Background G</label>
+								<input type="text" id="customize-background-g" class="form-control g-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-g">Text G</label>
+								<input type="text" id="customize-text-g" class="form-control g-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-g">Highlight G</label>
+								<input type="text" id="customize-highlight-g" class="form-control g-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-g background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-g">Default Transparency G, %</label>
+								<input type="number" id="customize-transparency-g" class="form-control g-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-g">Heading G</label>
+								<input type="text" id="customize-heading-g" class="form-control g-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-g">Link G</label>
+								<input type="text" id="customize-link-g" class="form-control g-link" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-h background-solid">
+							<div class="form-group">
+								<label for="customize-background-h">Background H</label>
+								<input type="text" id="customize-background-h" class="form-control h-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-h">Text H</label>
+								<input type="text" id="customize-text-h" class="form-control h-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-h">Highlight H</label>
+								<input type="text" id="customize-highlight-h" class="form-control h-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-h background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-h">Default Transparency H, %</label>
+								<input type="number" id="customize-transparency-h" class="form-control h-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-h">Heading H</label>
+								<input type="text" id="customize-heading-h" class="form-control h-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-h">Link H</label>
+								<input type="text" id="customize-link-h" class="form-control h-link" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-i background-solid">
+							<div class="form-group">
+								<label for="customize-background-i">Background I</label>
+								<input type="text" id="customize-background-i" class="form-control i-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-i">Text I</label>
+								<input type="text" id="customize-text-i" class="form-control i-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-i">Highlight I</label>
+								<input type="text" id="customize-highlight-i" class="form-control i-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-i background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-i">Default Transparency I, %</label>
+								<input type="number" id="customize-transparency-i" class="form-control i-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-i">Heading I</label>
+								<input type="text" id="customize-heading-i" class="form-control i-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-i">Link I</label>
+								<input type="text" id="customize-link-i" class="form-control i-link" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-j background-solid">
+							<div class="form-group">
+								<label for="customize-background-j">Background J</label>
+								<input type="text" id="customize-background-j" class="form-control j-bg" data-control="hue" value="">
+							</div>
+							<div class="form-group">
+								<label for="customize-text-j">Text J</label>
+								<input type="text" id="customize-text-j" class="form-control j-text" data-control="hue" value="">
+							</div>
+							<div class="form-group highlight">
+								<label for="customize-highlight-j">Highlight J</label>
+								<input type="text" id="customize-highlight-j" class="form-control j-highlight" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6 colors-j background-solid">
+							<div class="form-group">
+								<label for="customize-transparency-j">Default Transparency J, %</label>
+								<input type="number" id="customize-transparency-j" class="form-control j-out" value="">
+							</div>
+							<div class="form-group heading">
+								<label for="customize-heading-j">Heading J</label>
+								<input type="text" id="customize-heading-j" class="form-control j-heading" data-control="hue" value="">
+							</div>
+							<div class="form-group link">
+								<label for="customize-link-j">Link J</label>
+								<input type="text" id="customize-link-j" class="form-control j-link" data-control="hue" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="statuses">
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="form-group heading">
+								<label for="customize-primary">Primary</label>
+								<input type="text" id="customize-primary" class="form-control primary-bg" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="form-group">
+								<label for="customize-transparency-primary">Transparency (%)</label>
+								<input type="number" id="customize-transparency-primary" class="form-control primary-out" value="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="form-group heading">
+								<label for="customize-success">Success</label>
+								<input type="text" id="customize-success" class="form-control success-bg" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="form-group">
+								<label for="customize-transparency-success">Transparency (%)</label>
+								<input type="number" id="customize-transparency-success" class="form-control success-out" value="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="form-group heading">
+								<label for="customize-info">Info</label>
+								<input type="text" id="customize-info" class="form-control info-bg" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="form-group">
+								<label for="customize-transparency-info">Transparency (%)</label>
+								<input type="number" id="customize-transparency-info" class="form-control info-out" value="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="form-group heading">
+								<label for="customize-warning">Warning</label>
+								<input type="text" id="customize-warning" class="form-control warning-bg" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="form-group">
+								<label for="customize-transparency-warning">Transparency (%)</label>
+								<input type="number" id="customize-transparency-warning" class="form-control warning-out" value="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="form-group heading">
+								<label for="customize-danger">Danger</label>
+								<input type="text" id="customize-danger" class="form-control danger-bg" data-control="hue" value="">
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="form-group">
+								<label for="customize-transparency-danger">Transparency (%)</label>
+								<input type="number" id="customize-transparency-danger" class="form-control danger-out" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="controls">
+					<a href="#" class="btn save-custom-css">Save <span>theme-custom.css</span></a>
+				</div>
+				<div class="custom-css">
+					<h4>theme-custom.css</h4>
+					<p>Save this content to file <span class="file-name">theme-custom.css</span> (replace existing)</p>
+					<textarea class="content"></textarea>
+					<div class="controls">
+						<a href="#" class="btn close-panel">Close</a>
+					</div>
+				</div>
+				<div class="options-gate">
+					<h3>Preparing...</h3>
+					<p>it may take some time.</p>
+				</div>
+			</div>
+			<a class="toggle-button" href="#"><i class="fa fa-cogs"></i></a>
+			<div id="factory-theme" class="factory-flag">i2</div>
+		</div>
+		<!-- END: Customize Theme panel -->
+	</body>
+</html>

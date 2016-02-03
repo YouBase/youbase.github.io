@@ -1,0 +1,150 @@
+.transition(@t){
+	-webkit-transition: @t;
+	-moz-transition: @t;
+	-ms-transition: @t;
+	-o-transition: @t;
+	transition: @t;
+	.android-browser-4_3minus &{
+		transition: none;
+		-webkit-transition: none;
+	}
+}
+.transition-duration(@t){
+	-webkit-transition-duration: @t;
+	-moz-transition-duration: @t;
+	-ms-transition-duration: @t;
+	-o-transition-duration: @t;
+	transition-duration: @t;
+	.android-browser-4_3minus &{
+		transition-duration: 0s;
+		-webkit-transition-duration: 0s;
+	}
+}
+.transition-property(@p){
+	-webkit-transition-property: @p;
+	-moz-transition-property: @p;
+	-ms-transition-property: @p;
+	-o-transition-property: @p;
+	transition-property: @p;
+	.android-browser-4_3minus &{
+		transition-property: none;
+		-webkit-transition-property: none;
+	}
+}
+.transition-timing-function(@p){
+	-webkit-transition-timing-function: @p;
+	-moz-transition-timing-function: @p;
+	-ms-transition-timing-function: @p;
+	-o-transition-timing-function: @p;
+	transition-timing-function: @p;
+}
+.transition-delay(@p){
+	-webkit-transition-delay: @p;
+	-moz-transition-delay: @p;
+	-ms-transition-delay: @p;
+	-o-transition-delay: @p;
+	transition-delay: @p;
+	.android-browser-4_3minus &{
+		transition-delay: 0s;
+		-webkit-transition-delay: 0s;
+	}
+}
+.animate(@anim){
+	-webkit-animation: @anim;
+	-moz-animation: @anim;
+	-ms-animation: @anim;
+	animation: @anim;
+	.android-browser-4_3minus &{
+		animation: none;
+		-webkit-animation: none;
+	}
+}
+.animation(@name, @duration, @func) {
+	-webkit-animation-name: @name;
+	-moz-animation-name: @name;
+	-ms-animation-name: @name;
+	-o-animation-name: @name;
+	animation-name: @name;
+	-webkit-animation-duration: @duration;
+	-moz-animation-duration: @duration;
+	-ms-animation-duration: @duration;
+	-o-animation-duration: @duration;
+	animation-duration: @duration;
+	-webkit-animation-timing-function: @func;
+	-moz-animation-timing-function: @func;
+	-ms-animation-timing-function: @func;
+	-o-animation-timing-function: @func;
+	animation-timing-function: @func;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	.android-browser-4_3minus &{
+		animation: none;
+		-webkit-animation: none;
+	}
+}
+.animation-duration(@x){
+	-webkit-animation-duration: @x;
+	-moz-animation-duration: @x;
+	-moz-animation-duration: @x;
+	-o-animation-duration: @x;
+	animation-duration: @x;
+	.android-browser-4_3minus &{
+		animation-duration: 0s;
+		-webkit-animation-duration: 0s;
+	}
+}
+.border-radius(@r){
+	-moz-border-radius: @r;
+	-webkit-border-radius: @r;
+	border-radius: @r;
+}
+.border-top-left-radius(@r){
+	-moz-border-top-left-radius: @r;
+	-webkit-border-top-left-radius: @r;
+	border-top-left-radius: @r;
+}
+.border-top-right-radius(@r){
+	-moz-border-top-right-radius: @r;
+	-webkit-border-top-right-radius: @r;
+	border-top-right-radius: @r;
+}
+.border-bottom-left-radius(@r){
+	-moz-border-bottom-left-radius: @r;
+	-webkit-border-bottom-left-radius: @r;
+	border-bottom-left-radius: @r;
+}
+.border-bottom-right-radius(@r){
+	-moz-border-bottom-right-radius: @r;
+	-webkit-border-bottom-right-radius: @r;
+	border-bottom-right-radius: @r;
+}		
+.background-size(@s){
+	-webkit-background-size: @s;
+	-o-background-size: @s;
+	-moz-background-size: @s;
+	background-size: @s;
+}
+.transform(@x){
+	transform: @x;
+    -webkit-transform: @x;
+    -moz-transform: @x;
+    -ms-transform: @x;
+    -o-transform: @x;
+}
+.transition-transform(@s){
+	-webkit-transition: -webkit-transform @s;
+	-moz-transition: -moz-transform @s;
+	-ms-transition: -ms-transform @s;
+	-o-transition: -o-transform @s;
+	transition: transform @s;
+}
+.transition-property-transform(){
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-ms-transition-property: -ms-transform;
+	-o-transition-property: -o-transform;
+	transition-property: transform;
+}

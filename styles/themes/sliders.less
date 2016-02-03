@@ -1,0 +1,41 @@
+.slider, .carousel{
+	.slick-prev, .slick-next{
+		background-color: #f9f9f9;
+		background-color: rgba(255, 255, 255, .8);
+		&:before{
+			color: #222;
+			background-color: transparent;
+		}
+		&:hover{
+			background-color: #efefef;
+			background-color: rgba(255, 255, 255, .6);
+		}
+	}
+	.slick-dots{
+		li{
+			button:before{
+				color: @text;
+				color: fadeout(@text, 60%);
+				opacity: 1;
+			}
+		}
+		li.slick-active{
+			button:before{
+				color: @highlight;
+				color: fadeout(@text, 30%);
+				opacity: 1;
+			}
+		}
+	}
+}
+.carousel{
+	.slick-slide{
+		.bg;
+	}
+	.slick-slide when(lightness(@bg) < lightness(@text)){
+		.box-shadow(~"0 0 8px #fff");
+	}
+	.slick-slide when(lightness(@bg) >= lightness(@text)){
+		.box-shadow(~"0 0 8px #000");
+	}
+}

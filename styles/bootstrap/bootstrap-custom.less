@@ -1,0 +1,71 @@
+@import "../../../bootstrap/less/bootstrap.less";
+@import "../fonts-vars.less";
+
+@font-size-base: 13px;
+@font-size-h1: 90px;
+@font-size-h2: 70px;
+@font-size-h3: 30px;
+@font-size-h4: 20px;
+@font-size-h5: 15px;
+@font-size-h6: 13px;
+@line-height-base: 1.6923076923;
+@headings-line-height: 1.2;
+@headings-font-weight: @fw-700;
+@navbar-height: 70px;
+@import "../colors/mixins.less";
+@import "generated/background-color.less";
+@import "generated/color.less";
+
+@import "generated/disabled.less";
+@import "generated/inverse.less";
+@import "generated/readonly.less";
+
+@import "bootstrap-custom-colors.less";
+
+// THEME
+@primary-bg: #647a9c;
+@primary-out: 70;
+@success-bg: #c6edb5;
+@success-out: 70;
+@info-bg: #b9e0f4;
+@info-out: 70;
+@warning-bg: #f7efc7;
+@warning-out: 70;
+@danger-bg: #f09e9e;
+@danger-out: 70;
+@import "bootstrap-theme-statuses.less";
+
+@heading: #393939;
+@background: #000;
+@bg: fadeout(@background, 50%);
+@import "bootstrap-theme-scheme.less";
+// THEME END
+
+
+@color-bootstrap: inherit;
+
+.bg-bootstrap(@bgout){
+	background-color: transparent;
+	background-color: fadeout(#eee, @bgout);
+}
+.bg-bootstrap-normal(){
+	.bg-bootstrap(90%);
+}
+.bg-bootstrap-hard(){
+	.bg-bootstrap(80%);
+}
+.bg-bootstrap-hard-hard(){
+	.bg-bootstrap(70%);
+}
+.bootstrap-disabled(){
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
+}
+.bootstrap-inverse(){
+	.bootstrap-disabled;
+}
+.bootstrap-readonly(){
+	.bootstrap-disabled;
+}
+

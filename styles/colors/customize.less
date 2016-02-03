@@ -1,0 +1,57 @@
+#customize-panel{
+	.panel-colors(){
+		background-color: #222;
+		color: #efefef;
+	}
+	.title{
+		border-color: #555;
+	}
+	h2{
+		.panel-colors();
+	}
+	.toggle-button{
+		.panel-colors();
+	}
+	a.btn{
+		background-color: #111;
+		color: #efefef;
+		border-color: #fff;
+		&:hover{
+			background-color: #191919;
+		}
+	}
+	.options {
+		border-color: transparent;
+		.panel-colors();
+		.options-gate{
+			background-color: #222;
+			background-color: fadeout(#222, 20%);
+		}
+		.themes{
+			select{
+				background-color: #444;
+				color: #efefef;
+			}
+		}
+		.disable-area span{
+			background-color: #444;	
+		}
+	}
+	textarea{
+		background-color: #444;
+		color: #efefef;
+	}
+	.custom-css{
+		.panel-colors();
+		h2{
+			background-color: #444;
+		}
+		h4{
+			background-color: #181818;
+			color: #ccc;
+		}
+		textarea{
+			border-color: #656565;
+		}
+	}
+}

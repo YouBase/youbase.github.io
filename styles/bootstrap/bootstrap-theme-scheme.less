@@ -1,0 +1,55 @@
+@border-color-bootstrap: @heading;
+@border-out-bootstrap: 70%;
+.border-top-color-bootstrap(){
+	border-top-color: @border-color-bootstrap;
+	border-top-color: fadeout(@border-color-bootstrap, @border-out-bootstrap);
+}
+.border-right-color-bootstrap(){
+	border-right-color: @border-color-bootstrap;
+	border-right-color: fadeout(@border-color-bootstrap, @border-out-bootstrap);
+}
+.border-bottom-color-bootstrap(){
+	border-bottom-color: @border-color-bootstrap;
+	border-bottom-color: fadeout(@border-color-bootstrap, @border-out-bootstrap);
+}
+.border-left-color-bootstrap(){
+	border-left-color: @border-color-bootstrap;
+	border-left-color: fadeout(@border-color-bootstrap, @border-out-bootstrap);
+}
+.border-color-bootstrap(){
+	border-color: @border-color-bootstrap;
+	border-color: fadeout(@border-color-bootstrap, @border-out-bootstrap);
+}
+@import "generated/border-bottom-color.less";
+@import "generated/border-color.less";
+@import "generated/border-left-color.less";
+@import "generated/border-right-color.less";
+@import "generated/border-top-color.less";
+.modal{
+	.modal-content{
+		background-color: fadeout(@background, 15%);
+	}
+}
+.dropdown-menu{
+	background-color: fadeout(@bg, 15%);
+}
+.panel {
+  border: 1px solid;
+  .border-color-bootstrap;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn{
+	color: @heading;
+	&:hover{
+		color: @heading;
+		background-color: fadeout(@heading, 80%);
+	}
+}
+.panel>.list-group {
+	.border-color-bootstrap;
+}
+
+
+
+

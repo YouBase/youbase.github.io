@@ -1,0 +1,37 @@
+#comments{
+	.border-lite;
+	.comment-list{
+		.comment{
+			.border-lite;
+		}
+	}
+}
+.avatar, ul.tags-list li{
+	.border;
+}
+.post{
+	.post-meta{
+		color: @heading;
+		a{
+			color: @heading;
+			&:hover{
+				color: @highlight;
+			}
+		}
+		.post-month{
+			.border-lite;
+		}
+
+	}
+	h3{
+		a:hover{
+			color: @heading;
+		}
+	}
+	.post-tags {
+		color: fadeout(@text, 15%);
+	}
+	.post-month{
+		color: @highlight;
+	}
+}
