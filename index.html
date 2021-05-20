@@ -1,158 +1,421 @@
 <!DOCTYPE html>
-<html class="background-100-e">
-  <head>
+<html lang="ru">
+
+<head>
     <meta charset="utf-8">
+    <!-- <base href="/"> -->
+    <title>Cortex</title>
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>YouBase</title>
-    <meta name="description" content="YouBase - An individual-centric cryptographic peer-to-peer data store." />
-    <meta name="keywords" content="youbase, individual-centric, cryptographic, peer-to-peer, data store" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
-    <link rel="stylesheet" href="bower_components/minicolors/jquery.minicolors.css" />
-    <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
-    <link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css" />
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-custom.min.css" />
-    <link rel="stylesheet" href="lib/linecons/style.css" />
-    <link rel="stylesheet" href="styles/style.min.css" />
-    <link rel="stylesheet" href="theme-custom.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
-  </head>
-  <body class="state1 background-100-f">
-    <!-- BEGIN: Top menu -->
-    <nav class="navbar navbar-default navbar-fixed-top page-transition" role="navigation" id="top-nav" data-state1-colors="colors-a background-20" data-state2-colors="colors-e">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="menu-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" href="#"><span></span></a>
-          <a class="navbar-brand" href="">YOU<span class="highlight">BASE</span></a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://paper.youbase.io" class="hover-effect">White Paper</a></li>
-            <li><a href="http://blog.youbase.io" class="hover-effect">Blog</a></li>
-            <li><a href="http://github.com/youbase" class="hover-effect">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- END: Top menu -->
-    <ul id="dot-scroll" class="colors-e background-0"></ul>
-    <div class="gate colors-f background-solid">
-      <div class="gate-bar background-highlight"></div>
-      <ul class="loader">
-        <li class="background-highlight"></li>
-        <li class="background-highlight"></li>
-        <li class="background-highlight"></li>
-      </ul>
-    </div>
-    <!-- BEGIN: Page content -->
-    <!-- Source: http://www.youtube.com/watch?v=2zLQI4Dfi_w -->
-    <!-- <div class="youtube-bg" data-video="2zLQI4Dfi_w" data-mute="yes" data-volume="50" data-alternative="images/bg/stephane/3.jpg"></div> -->
-    <!-- BEGIN: Home -->
-    <section id="home">
-      <div class="view">
-        <img alt class="bg" src="images/bg/background-2.jpg" /><img alt class="bg" src="images/bg/background-3.jpg" />
-        <div class="content full-size colors-a background-0">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <h1 class="text-left heading site-title"><span class="underline">YOU<span class="highlight">BASE</span></span></h1>
-                <p class="title text-left highlight stroke-background">An individual-centric cryptographic peer-to-peer data store</p>
-                <p class="text-left site-control"><a href="http://paper.youbase.io" class="btn background-lite-b border-highlight-b highlight-b">White Paper</a></p>
-              </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="./images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" src="./images/favicon.svg">
+    <!-- Template Basic Images End -->
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#fff">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <!-- Start here -->
+    <main>
+        <div class="mobile_menu">
+            <div class="window_header">
+                <div class="logo"><a href="#"><img src="./image/logo.svg" alt="logo"></a></div>
             </div>
-          </div>
+            <div class="back_menu"> <img src="./image/back_but.svg" alt="">
+                <p class="button-1">Back</p>
+            </div>
+            <div class="container">
+                <div class="form_content">
+                    <h2 class="title-h2"> Sign up for beta and to join our <span class="title-h2 orange">Cortex
+                            ID</span> and domain sale.</h2>
+                    <form id="g-form-1" method="POST" action="" autocomplete="off" class="g-form">
+                        <fieldset class="g-form__input-wrapper">
+                            <input id="email" name="Email" type="email" value="" required />
+                            <span class="label-1">Your&nbspemail</span>
+                        </fieldset>
+                        <button class="button-1 g-form__button">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="form_back_bg">
+                <img src="./image/bg_grid.svg" alt="">
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- END: Home -->
-    <!-- END: Page content -->
-    <script>
-    if (typeof(atob) == "undefined")
-    {
-      document.write('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
-      var atob = function(x)
-      {
-        return base64.decode(x);
-      }
-    }
-    </script>
-    <script src="bower_components/less.js/dist/less.min.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
-    <script src="bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="lib/SmoothScroll-1.2.1/SmoothScroll.js"></script>
-    <script src="bower_components/jquery-cookie/jquery.cookie.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="bower_components/jqBootstrapValidation/dist/jqBootstrapValidation-1.3.7.min.js"></script>
-    <script src="bower_components/minicolors/jquery.minicolors.min.js"></script>
-    <script src="bower_components/slick.js/slick/slick.min.js"></script>
-    <script src="bower_components/shufflejs/dist/jquery.shuffle.min.js"></script>
-    <script src="bower_components/textillate/assets/jquery.lettering.js"></script>
-    <script src="bower_components/textillate/assets/jquery.fittext.js"></script>
-    <script src="bower_components/textillate/jquery.textillate.js"></script>
-    <script src="lib/prism/prism.js"></script>
-    <script>
-    (function()
-    {
-      var isWin = navigator.appVersion.indexOf("Win") !== -1;
-      if (isWin) $('html').addClass('win');
-      var ua = navigator.userAgent.toLowerCase();
-      var isChrome = ua.indexOf('chrome') > -1;
-      if (isChrome) $('html').addClass('chrome');
-      var isAndroidBrowser4_3minus = ((ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('android ') > -1 && ua.indexOf('applewebkit') > -1) && !(ua.indexOf('chrome') > -1));
-      if (isAndroidBrowser4_3minus) $('html').addClass('android-browser-4_3minus');
-      var isSafari = !isChrome && ua.indexOf('safari') !== -1;
-      if (isSafari) $('html').addClass('safari');
-      var isMobile = Modernizr.touch;
-      if (isMobile)
-      {
-        $('html').addClass('mobile poor-browser');
-      }
-      else
-      {
-        $('html').addClass('non-mobile');
-      }
-      if (isWin && isSafari)
-      {
-        $('html').addClass('flat-animation');
-      }
-    })();
-    </script>
-    <script src="scripts/script-bundle.js"></script>
-    <script>
-    if (Function('/*@cc_on return document.documentMode===9@*/')())
-    {
-      $('html').addClass('ie9');
-    }
-    if (Function('/*@cc_on return document.documentMode===10@*/')())
-    {
-      $('html').addClass('ie10');
-    }
-    if (!!navigator.userAgent.match(/Trident.*rv\:11\./))
-    {
-      $('html').addClass('ie11');
-    }
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <div class="preloader">
+            <video autoplay muted playsinline preload="yes" src="./image/Cortex_preloader_3.mp4" id="myVideo"></video>
+        </div>
+        <div class="light">
+            <img src="./image/light_bg-min.svg" alt="bg">
+        </div>
+        <div class="light_480">
+            <img src="./image/light1_480.png" alt="bg">
+        </div>
+        <header>
+            <div class="logo"><a href="#"><img src="./image/logo.svg" alt="logo"></a></div>
+            <div class="social row">
+                <a href="https://twitter.com/app_cortex" target="blank" class="social-icon"></a>
+                <a href="https://t.me/cortex_app" target="blank" class="social-icon"></a>
+                <img src="./image/Twitter.svg" class="icon_twit" alt="twitter">
+                <img src="./image/Vector.svg" class="icon_tel" alt="telegram">
+            </div>
+        </header>
+        <a class="access button-1 bt-menu"><span class="zzz">Early Access</span></a>
+        <div class="shadow">
+            <img src="./image/shadow.png" alt="shadow">
+        </div>
+        <section class="hero linkactive" id="hero">
+            <div class="container">
+                <div class="column_row">
+                    <div class="hero-left anim-items">
+                        <h2 class="title-h2">Contextual Thinking</h2>
+                        <p class="desc-1">Cortex is a new note taking app that allows you to create and collaborate with
+                            meaning. <br> <br> Meaning comes from several new contexts for your
+                            notes
+                            and other digital assets.</p>
+                    </div>
+                    <div class="hero-right anim-items">
+                        <img src="./image/ded.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="light_left">
+            <img src="./image/light_left2-min.svg" alt="bg">
+        </div>
+        <div class="light_left_480">
+            <img src="./image/light2_480.png" alt="bg">
+        </div>
+        <section class="new_kind linkactive" id="new_kind">
+            <div class="container">
+                <div class="column_row">
+                    <div class="new_kind-left anim-items">
+                        <img src="./image/ilustr_2.svg" alt="il">
+                    </div>
+                    <div class="new_kind-right anim-items">
+                        <img src="./image/circle_mini_1.png" alt="3">
+                        <h2 class="title-h2 ">A New Kind of Linking</h2>
+                        <p class="desc-1 ">Keylinks
+                            allow for public and private links. Each
+                            note has cryptographic keys identified by
+                            your
+                            personal domain and path. </p>
+                        <div id="box" class="slider">
+                            <p class="desc-1">Alice.me/Blog or another path you choose and the content that lives there becomes yours and
+                                yours only in the world. In essence, human-readable key names work like file paths or URLs. You can
+                                even use your current crypto current keys as the beginning of new note structures, giving
+                                your current keys a whole new power. Keylinks that aren’t for your indentity don’t open. Markup makes
+                                it all flexible.</p>
+                        </div>
+                        <a class="button-1 purple" id="butopen1">Read More</a>
+                        <a class="button-1 purple" id="butclose1">Hide</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="light3_right">
+            <img src="./image/light3_right.svg" alt="3">
+        </div>
+        <div class="light3_right_480">
+            <img src="./image/light3_480.png" alt="3">
+        </div>
+        <div class="verifiably_light_left">
+            <img src="./image/verifiably_light_left.svg" alt="">
+        </div>
+        <div class="verifiably_light_left_480">
+            <img src="./image/light4_480.png" alt="">
+        </div>
+        <section class="verifiably linkactive" id="verifiably">
+            <div class="container">
+                <div class="column_row">
+                    <div class="verifiably-left anim-items">
+                        <img src="./image/circle_mini_2.png" class="circle" alt="2">
+                        <h2 class="title-h2 orange">Verifiably Yours</h2>
+                        <h3 class="accent ">The gateway to an authentic
+                            internet.</h3>
+                        <img src="./image/verifiably_ilustr.svg" class="ilustr " alt="left">
+                    </div>
+                    <div class="verifiably-right anim-items">
+                        <h3 class="title-h3 ">NFTs in Context</h3>
+                        <p class="desc-1 ">As each note has keys for a valid crypto address. Each note can be
+                            validated by the note owner, can be used as
+                            an ID and can be used to carry NFTs. Digital assets in a whole new context.</p>
+                        <h3 class="title-h3 ">Ownership on the Go
+                        </h3>
+                        <p class="desc-1 ">While you can prove ownership,
+                            nobody else can prove what you own without
+                            you OKing that approval. Organize, carry and access all your digital stuff wherever you go. </p>
 
-      ga('create', 'UA-63547662-1', 'auto');
-      ga('send', 'pageview');
+                        <h3 class="title-h3 ">Smart Identity</h3>
+                        <p class="desc-1 ">Show a barcode to prove anything you
+                            own is yours and current. Others can also digitally sign for additional
+                            verification of aspects of your authentic self.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg_grid">
+            <img src="./image/bg_grid.svg" alt="hs">
+        </div>
+        <div class="bg_grid_480">
+            <img src="./image/bg_grid.svg" alt="hs">
+        </div>
+        <section class="your_decision verifiably" id="your_decision">
+            <div class="container">
+                <div class="column_row">
+                    <div class="your_decision-left anim-items">
+                        <img src="./image/circle_mini_3.png" class="" alt="circle">
+                        <h2 class="title-h2 blue ">Data Access and Storage Control
+                        </h2>
+                        <p class="desc-1 ">You decide who has access to your
+                            notes. You hold the keys. Neither Cortex nor
+                            anyone else can access your notes without your permission. Everything’s encrypted end to
+                            end, unless you make it public. </p>
+                        <div id="box2" class="slider2">
+                            <p class="desc-1">Your encrypted data will be able to live where you choose, locally, IPFS,
+                                AWS or just about anywhere.</p>
+                        </div>
+                        <a class="button-1 blue" id="butopen2">Read More</a>
+                        <a class="button-1 purple" id="butclose2">Hide</a>
+                    </div>
+                    <div class="your_decision-right anim-items">
+                        <img src="./image/circle_decide.svg" alt="circle">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="channel_light_left">
+            <img src="./image/chanel_light.svg" alt="light">
+        </div>
+        <div class="channel_light_left_480">
+            <img src="./image/light5_480.png" alt="light">
+        </div>
+        <section class="channel verifiably" id="channel">
+            <div class="container">
+                <div class="column_row">
+                    <div class="channel-left anim-items">
+                        <img src="./image/circle_channel.svg" alt="img">
+                    </div>
+                    <div class="channel-right anim-items">
+                        <img src="./image/circle_mini_4.png" class="" alt="img">
+                        <h2 class="title-h2 ">Channels for Sharing and
+                            Collaboration</h2>
+                        <p class="desc-1 ">Keep things private for yourself,
+                            between you and one other, a group, or
+                            publish to the web
+                            to collaborate. Git-like features will manage versions, history and even forking of your
+                            creations. The history of changes will move with your creations. Simple, decentralized and
+                            provable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="earn verifiably" id="earn">
+            <div class="container">
+                <div class="column_row">
+                    <div class="earn-left anim-items">
+                        <img src="./image/circle_mini_5.png" alt="circle">
+                        <h2 class="title-h2 orange ">Earn Recognition and Coin
+                        </h2>
+                        <p class="desc-1">With keys, of course,
+                            there’s also a financial context. You can
+                            quickly turn anything you create into a digital asset and receive coin where your content lives. </p>
+                        <div id="box3" class="slider3">
+                            <p class="desc-1">Individual notes or entire trees of notes can become
+                                shareable, tradeable NFTs.</p>
+                        </div>
+                        <a class="button-1 orange" id="butopen3">Read More</a>
+                        <a class="button-1 purple" id="butclose3">Hide</a>
+                    </div>
+                    <div class="earn-right anim-items">
+                        <img src="./image/earn_circle.svg" alt="circle">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="topics_light_left">
+            <img src="./image/topics_light.svg" alt="light">
+        </div>
+        <div class="topics_light_left_768">
+            <img src="./image/topics_light_left_768.png" alt="light">
+        </div>
+        <div class="topics_light_left_480">
+            <img src="./image/light6_480.png" alt="light">
+        </div>
+        <section class="topics verifiably" id="topics">
+            <div class="container">
+                <div class="topics-content anim-items">
+                    <img src="./image/circle_mini_6.png" class="mini_topics" alt="#">
+                    <h2 class="title-h2 blue">Topics and Social Search</h2>
+                    <p class="desc-1">Notes have topics and links that allow you
+                        to share, search and contribute
+                        across your social sphere and the metaverse. Then search in a social context see what the people you care about are saying on a
+                        topic.</p>
+                    <div class="circle_three anim-items">
+                        <img src="./image/circle_topics1.svg" alt="circle_topics1">
+                        <img src="./image/circle_topics2.svg" alt="circle_topics2">
+                        <img src="./image/circle_topics3.svg" alt="circle_topics3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="globally_light">
+            <img src="./image/globally_light.svg" alt="light">
+        </div>
+        <div class="globally_light_480">
+            <img src="./image/light7_480.png" alt="light">
+        </div>
+        <section class="globally verifiably" id="globally">
+            <div class="container">
+                <div class="column_row">
+                    <div class="globally-left anim-items">
+                        <img src="./image/globally_circle.svg" alt="circle">
+                    </div>
+                    <div class="globally-right anim-items">
+                        <img src="./image/circle_mini_7.png" class="globally_mini_circle" alt="circle">
+                        <h2 class="title-h2 ">Globally Unique</h2>
+                        <div class="globally_list ">
+                            <img src="./image/globally_number1.svg" alt="circle">
+                            <p class="desc-1">Butterfly Protocol domain names
+                                will act as global IDs on Cortex. Cortex-specific domains (NFT-tree based) will be available with Cortex utility tokens.</p>
+                        </div>
+                        <div class="globally_list ">
+                            <img src="./image/globally_number2.svg" alt="circle">
+                            <p class="desc-1">With these names on Cortex, you'll make a great impression and be able to open
+                                up some unique features and earn based on your contributions.</p>
+                        </div>
+                        <div class="globally_list ">
+                            <img src="./image/globally_number3.svg" alt="circle">
+                            <p class="desc-1">The domain will serve as an ID but also an address for your creations and
+                                posts.</p>
+                        </div>
+                        <a class="button-1 slide_to_sign">
+                            Sign Up To Stay Informed
+                        </a>
+                        <img src="./image/arrow.svg" alt="arrow" class="arrow">
+                        <div class="shadow_2">
+                            <img src="./image/shadow_2.svg" alt="shadow_2">
+                        </div>
+                        <!-- <a href="#" class="">
+                            <div class="button-1 globally_but">Sign Up To Stay Informed <img src="./image/arrow.svg"
+                                    alt="arrow" class="arrow"></div>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="source verifiably" id="source">
+            <div class="container">
+                <div class="column_row">
+                    <div class="source-left anim-items">
+                        <img src="./image/circle_mini_8.png" class="" alt="circle">
+                        <h2 class="title-h2 orange ">Open Source</h2>
+                        <p class="desc-1 ">The Technology under the hood in the
+                            Cortex application is the YouBase
+                            Distributed Data Protocol (YDDP). YDDP will be open source.</p>
+                        <div id="box4" class="slider4">
+                            <p class="desc-1">YDDP connects data to HD crypto wallets in some unique and easy to use
+                                ways while separating data structure from data location.</p>
+                        </div>
+                        <a class="button-1 orange" id="butopen4">Read More</a>
+                        <a class="button-1 purple" id="butclose4">Hide</a>
+                    </div>
+                    <div class="source-right anim-items">
+                        <img src="./image/circle_source.svg" alt="circle">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="about_bg_light">
+            <img src="./image/about_bg_light.png" alt="light">
+        </div>
+        <div class="about_bg_grid">
+            <img src="./image/about_bg_grid_768.png" alt="grid">
+        </div>
+        <div class="about_bg_light_480">
+            <img src="./image/light8_480.png" alt="light">
+        </div>
+        <div class="about_bg_grid_480">
+            <img src="./image/grid_bg2_480.png" alt="grid">
+        </div>
+        <section class="about verifiably" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <img src="./image/circle_mini_9.png" class="anim-items" alt="circle">
+                    <h2 class="title-h2 blue">About</h2>
+                    <p class="desc-1">YouBase was founded on the idea of making
+                        your personal stuff truly yours: private, secure and usable. Cortex puts it all to work in meaningful ways, for you, finally.</p>
+                    <img src="./image/about_ded.svg" class="about_ded" alt="ded">
+                </div>
+            </div>
+        </section>
+        <div class="sign_up_light">
+            <img src="./image/sign_up_light.png" alt="grid">
+        </div>
+        <div class="sign_up_left_768">
+            <img src="./image/sign_up_bg_768.png" alt="grid">
+        </div>
+        <section class="sign_up verifiably" id="sign_up">
+            <div class="container">
+                <div class="sign_up-content anim-items">
+                    <h2 class="title-h2">
+                        Sign up for beta and to join our <span class="title-h2 orange">Cortex ID</span> and domain sale.
+                    </h2>
+                    <form id="g-form2-1" method="POST" action="" autocomplete="off" class="g-form2">
+                        <fieldset class="g-form2__input-wrapper">
+                            <input id="email" name="Email" type="email" value="" required />
+                            <span class="label-1">Your&nbspemail</span>
+                        </fieldset>
+                        <button class="button-1 g-form2__button"><p class="zzz"> Sign Up</p></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="tnx">
+            <h2 class="title-h2">Thank you for subscribing</h2>
+            <div class="back_menu2"> <img src="./image/back_but.svg" alt="">
+                <p class="button-1">Back</p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer_content">
+                    <div class="logo_social">
+                        <div class="logo_footer"><a href="#"><img src="./image/logo.svg" alt="logo"></a></div>
+                        <div class="social_footer row">
+                            <a href="https://twitter.com/app_cortex" target="blank" class="social_footer-icon"></a>
+                            <a href="https://t.me/cortex_app" target="blank" class="social_footer-icon"></a>
+                            <img src="./image/Twitter.svg" class="icon_twit_footer" alt="twitter">
+                            <img src="./image/Vector.svg" class="icon_tel_footer" alt="telegram">
+                        </div>
+                    </div>
+                    <div class="footer_link">
+                        <a href="#hero" rel="m_PageScroll2id" class="label-1">Contextual Thinking</a>
+                        <a href="#new_kind" rel="m_PageScroll2id" class="label-1">A New Kind of Linking</a>
+                        <a href="#verifiably" rel="m_PageScroll2id" class="label-1">Verifiably Yours</a>
+                        <a href="#your_decision" rel="m_PageScroll2id" class="label-1">You Decide Who Can See What</a>
+                        <a href="#earn" rel="m_PageScroll2id" class="label-1">Earn recognition and coin</a>
+                        <a href="#topics" rel="m_PageScroll2id" class="label-1">Topics and Social Search</a>
+                        <a href="#globally" rel="m_PageScroll2id" class="label-1">Globally Unique</a>
+                        <a href="#source" rel="m_PageScroll2id" class="label-1">Open Source</a>
+                        <a href="#about" rel="m_PageScroll2id" class="label-1">About</a>
+                    </div>
+                </div>
+            </div>
+            <p class="label-1 text_footer">© 2021. YouBase, Inc</p>
+        </footer>
+    </main>
+    <!-- End here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/g-form/g-form.js"></script>
+    <script src="js/g-form/g-form2.js"></script>
+    <!-- include additional scripts here AFTER app scripts will run -->
+</body>
 
-    </script>
-  </body>
 </html>
