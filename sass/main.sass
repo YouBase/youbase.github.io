@@ -2363,10 +2363,12 @@ footer
     .adwisors
         padding-bottom: gem(100)
         .team
+            flex-wrap: wrap
+            position: relative
+            left: gem(60)
+            justify-content: center
             &-list
-                margin: 0 gem(90) 0 0
-                &:nth-child(2)
-                    margin: 0 0 0 gem(90)
+                margin: 0 gem(100) gem(100) 0
 @media only screen and (max-width : 480px)
     .adwisors
         padding-top: gem(0)
@@ -2376,18 +2378,20 @@ footer
                 margin-bottom: gem(80)
         .team
             flex-direction: column
+            left: 0
             &-list
                 margin: 0
                 display: flex
                 flex-direction: row
                 margin-bottom: gem(80)
-                &:nth-child(2)
-                    margin: 0
+                // &:nth-child(2)
+                //     margin: 0
                 &-data
                     display: flex
                     flex-direction: column
                     position: relative
                     top: gem(22)
+                    margin-left: gem(45)
 
 .elipse_advisor
     display: flex
