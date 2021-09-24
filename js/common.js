@@ -1,3 +1,5 @@
+// const autoPrefixer = require("gulp-autoprefixer");
+
 $(function () {
 
     //pagescroll 2 id
@@ -98,6 +100,58 @@ butopen4.onclick = function() {
     box4.classList.add("open4")
     butopen4.classList.add('active')
     butclose4.classList.add('active')
+}
+
+// $('.read_more_one').on('click', function() {
+//     $('.text_drop-one').toggleClass('active');
+// })
+// $('.read_more_two').on('click', function() {
+//     $('.text_drop-two').toggleClass('active');
+// })
+// $('.read_more_three').on('click', function() {
+//     $('.text_drop-three').toggleClass('active');
+// })
+// $('.read_more_four').on('click', function() {
+//     $('.text_drop-four').toggleClass('active');
+// })
+// $('.read_more_five').on('click', function() {
+//     $('.text_drop-five').toggleClass('active');
+// })
+
+let allPeople = document.querySelectorAll('.team-list.people')
+
+for (let i = 0; i < allPeople.length; i++) {
+    let dropdownText = allPeople[i].querySelector('.text_drop')
+    let dropdownButton = allPeople[i].querySelector('.read_more')
+    let dropdownDots = allPeople[i].querySelector('.dots')
+    
+    if(dropdownButton) {
+        dropdownButton.addEventListener('click', () => {
+            if(dropdownText.classList.contains('drop')) {
+                gsap.to(dropdownText, {
+                    height: '.36rem',
+                    duration: .2,
+                });
+                gsap.to(dropdownDots, {
+                    opacity: 1,
+                    duration: 0,
+                })
+            } else {
+                gsap.to(dropdownText, {
+                    height: 'auto',
+                    duration: .2,
+                });
+                gsap.to(dropdownDots, {
+                    opacity: 0,
+                    duration: 0,
+                })
+            }
+            dropdownText.classList.toggle('drop')
+        })
+    }
+
+    
+    
 }
 
 butclose.onclick = function() {
