@@ -2447,3 +2447,65 @@ footer
             left: gem(7)
             font-size: gem(10)
             line-height: gem(16)
+.partners
+    padding: gem(100) 0 gem(100) 0
+    .team
+        flex-wrap: wrap
+        width: 100%
+        justify-content: center
+        &-list
+            margin-right: gem(100)
+            margin-top: gem(80)
+            &-data
+                h3
+                    margin-bottom: 0
+        &-list:nth-child(4), &-list:nth-child(8), &-list:last-child
+            margin-right: 0
+        &-list:nth-child(1), &-list:nth-child(2), &-list:nth-child(3), &-list:nth-child(4)
+            margin-top: 0
+
+@media only screen and (max-width : 1024px)
+    .partners
+        .team
+            justify-content: space-between
+            &-list
+                margin-right: 0
+                margin-top: gem(100)
+            &-list:nth-child(3), &-list:nth-child(4)
+                margin-top: gem(100)
+            &-list:nth-child(1), &-list:nth-child(2)
+                margin-top: 0
+@media only screen and (max-width : 480px)
+    .partners
+        padding-top: gem(63)
+        padding-bottom: gem(204)
+        h2
+            margin-bottom: gem(80)
+        .team
+            flex-direction: row
+            flex-wrap: wrap
+            align-items: flex-start
+            &-list
+                width: gem(132)
+                height: gem(242)
+                flex-direction: column
+                margin: gem(0) !important
+                margin-bottom: 0 !important
+                margin-top: gem(20) !important
+                align-items: center
+                img
+                    width: gem(132)
+                    margin-bottom: 0
+                    margin-right: gem(12)
+                &:nth-child(1), &:nth-child(2)
+                    margin-top: 0 !important
+                &:nth-child(even)
+                    flex-direction: column
+                    img
+                        margin-right: 0
+                        margin-left: 0
+                &-data
+                    display: flex
+                    flex-direction: column
+                    h3
+                        margin-top: gem(20)
