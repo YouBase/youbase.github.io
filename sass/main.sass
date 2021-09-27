@@ -540,7 +540,7 @@ header
         display: flex
         flex-direction: row
         position: relative
-        padding-top: gem(100)
+        padding-top: gem(0)
     &-left
         z-index: 2
         padding-top: gem(189)
@@ -2259,31 +2259,99 @@ footer
         h2
             color: #FC7937
             margin-bottom: gem(94)
+        h3
+            color: #FC7937
+            margin-bottom: gem(8)
+            font-size: gem(24)
+            line-height: gem(30)
+        p:nth-child(2)
+            font-size: gem(16)
+            line-height: gem(24)
+            margin-bottom: gem(12)
+        p:nth-child(3)
+            color: #6469AE
+            font-size: gem(12)
+            line-height: gem(18)
+            text-align: center
+            margin-bottom: gem(8)
+            max-width: gem(207)
+        // span
+        //     color: #6469AE
+        //     font-size: gem(12)
+        //     line-height: gem(18)
+        //     text-align: left
+        //     transition: 0.3s all ease
+        //     width: 100%
+        //     display: none
     .team
         display: flex
-        flex-direction: row
+        width: gem(910)
+        margin: 0
+        justify-content: space-between
         &-list
             display: flex
             flex-direction: column
+            align-items: center
             text-align: center
-            p
-                margin-bottom: gem(20)
+            width: gem(223)
             img
                 width: gem(180)
-            &:nth-child(2)
-                margin: 0 gem(145)
+                margin-bottom: gem(20)
             &-social
                 display: flex
                 justify-content: center
+                align-items: flex-end
                 a
                     display: flex
                     margin-right: gem(16)
+                    svg
+                        transition: 0.3s all ease
+                        path
+                            transition: 0.3s all ease
                     &:hover
                         svg
-                            path 
+                            transition: 0.3s all ease
+                            path
+                                transition: 0.3s all ease 
                                 fill: #fff
-                    &:nth-child(2)
-                        margin-top: gem(5)
+                a:last-child
+                    margin-right: 0
+            .team-list-data
+                p:nth-child(3)
+                    overflow-y: hidden
+                    height: gem(36)
+                    position: relative
+                    span.dots
+                        display: inline
+                        color: #6469AE
+                        font-size: gem(12)
+                        line-height: gem(18)
+                        opacity: 1
+                .read_more
+                    display: flex
+                    justify-content: center
+                    margin-bottom: gem(13)
+                    span.desc-1
+                        font-size: gem(16)
+                        line-height: gem(20)
+                        color: rgba(252, 121, 55, 1)
+                        transition: 0.3s all ease
+                        position: relative
+                        cursor: pointer
+                        &::before
+                            content: ''
+                            width: 100%
+                            height: gem(1)
+                            background: rgba(252, 121, 55, 1)
+                            position: absolute
+                            bottom: 0
+                            transition: 0.3s all ease
+                    span.desc-1:hover
+                        &::before
+                            background: rgba(252, 121, 55, 0)
+                p.text_drop-one.active
+                    overflow-y: unset
+                    height: unset
 @media only screen and (max-width : 1024px)
     .core_team
         padding: gem(100) 0 0 0
@@ -2291,39 +2359,50 @@ footer
             align-items: flex-start
         .team
             flex-wrap: wrap
+            width: 100%
             &-list
-                margin-right: gem(200)
+                margin-right: 0
                 &:nth-child(2)
                     margin: 0
                 &:nth-child(3)
-                    margin-top: gem(115)
+                    margin-top: gem(94)
 @media only screen and (max-width : 480px)
     .core_team
         padding: 0 0 0 0
         p
         &-data
             position: relative
-            top: gem(-100)
+            top: gem(36)
             h2
                 margin-bottom: gem(80)
         .team
+            width: 100%
             &-list
+                width: 100%
                 flex-direction: row
                 margin-right: gem(0)
                 margin-bottom: gem(80)
+                align-items: flex-start
+                img
+                    width: gem(132)
+                    margin-bottom: 0
+                    margin-right: gem(12)
                 &:nth-child(2)
                     margin: 0
                     margin-bottom: gem(80)
                 &:nth-child(3)
-                    margin-top: gem(0)
+                    margin: gem(0)
+                &:nth-child(even)
+                    flex-direction: row-reverse
+                    img
+                        margin-right: 0
+                        margin-left: gem(12)
                 &-data
                     display: flex
                     flex-direction: column
-                    position: relative
-                    top: gem(22)
 
 .adwisors
-    padding-top: gem(100)
+    padding: gem(100) 0 gem(100) 0
     z-index: 4
     &-data
         display: flex
@@ -2333,65 +2412,252 @@ footer
         z-index: 3
         .adwisors_circle
             width: gem(80)
-            transform: rotate(180deg)
+            margin-bottom: gem(20)
+        h3
+            color: #FC7937
+            margin-bottom: gem(8)
+            font-size: gem(24)
+            line-height: gem(30)
         h2
             color: #FC7937
             margin-bottom: gem(94)
-        img
-            margin-bottom: gem(20)
+        p:nth-child(2)
+            font-size: gem(16)
+            line-height: gem(24)
+            margin-bottom: gem(12)
+        p:nth-child(3)
+            color: #6469AE
+            font-size: gem(12)
+            line-height: gem(18)
+            text-align: center
+            margin-bottom: gem(8)
+            max-width: gem(207)
+            position: relative
+            a
+                color: #6469AE
+                font-size: gem(12)
+                line-height: gem(18)
+                text-align: center
+                position: relative
+                text-decoration: underline
+                text-decoration-color: rgba(100, 105, 174, 1)
+                transition: 0.3s all ease
+            //     &::before
+            //         content: ''
+            //         width: 100%
+            //         position: absolute
+            //         bottom: gem(-1)
+            //         background: #6469AE
+            //         height: gem(1)
+            //         transition: 0.3s all ease
+            //         opacity: 1
+            a:hover
+                text-decoration-color: rgba(100, 105, 174, 0)
+        // span
+        //     color: #6469AE
+        //     font-size: gem(12)
+        //     line-height: gem(18)
+        //     text-align: left
+        //     transition: 0.3s all ease
+        //     width: gem(9)
+        //     position: absolute
+        //     right: 0
+        //     bottom: 0
+        //     display: none
     .team
         display: flex
-        flex-direction: row
+        width: gem(910)
+        margin: 0
+        flex-wrap: wrap
+        justify-content: center
         &-list
+            display: flex
+            flex-direction: column
+            align-items: center
             text-align: center
-            margin: 0 gem(80)
-            p
+            width: gem(223)
+            margin-right: gem(120)
+            img
+                width: gem(180)
                 margin-bottom: gem(20)
             &-social
                 display: flex
                 justify-content: center
+                align-items: flex-end
                 a
                     display: flex
                     margin-right: gem(16)
+                    svg
+                        transition: 0.3s all ease
+                        path
+                            transition: 0.3s all ease
                     &:hover
                         svg
-                            path 
+                            transition: 0.3s all ease
+                            path
+                                transition: 0.3s all ease
                                 fill: #fff
-                    &:nth-child(2)
-                        margin-top: gem(5)
+                a:last-child
+                    margin-right: 0
+        &-list:nth-child(4), &-list:nth-child(5), &-list:nth-child(6)
+            margin-top: gem(92)
+        &-list:nth-child(3), &-list:nth-child(5)
+            margin-right: 0
+    .team-list-data
+        p:nth-child(3)
+            overflow-y: hidden
+            height: gem(36)
+            span.dots
+                display: inline
+                color: #6469AE
+                font-size: gem(12)
+                line-height: gem(18)
+                opacity: 1
+        .read_more
+            display: flex
+            justify-content: center
+            margin-bottom: gem(13)
+            span.desc-1
+                font-size: gem(16)
+                line-height: gem(20)
+                color: rgba(252, 121, 55, 1)
+                transition: 0.3s all ease
+                position: relative
+                cursor: pointer
+                &::before
+                    content: ''
+                    width: 100%
+                    height: gem(1)
+                    background: rgba(252, 121, 55, 1)
+                    position: absolute
+                    bottom: 0
+                    transition: 0.3s all ease
+            span.desc-1:hover
+                &::before
+                    background: rgba(252, 121, 55, 0)
+        p.text_drop-two.active, p.text_drop-three.active, p.text_drop-four.active, p.text_drop-five.active
+            overflow-y: unset
+            height: unset
 @media only screen and (max-width : 1024px)
     .adwisors
         padding-bottom: gem(100)
         .team
+            width: 100%
+            justify-content: space-between
             flex-wrap: wrap
-            position: relative
-            left: gem(60)
-            justify-content: center
             &-list
-                margin: 0 gem(100) gem(100) 0
+                margin: 0
+                margin-top: gem(93)
+                img
+                    align-self: unset
+            &:nth-child(1), &:nth-child(2)
+                margin-top: 0
+        &-data
+            img, h2
+                align-self: flex-start
+                
 @media only screen and (max-width : 480px)
     .adwisors
         padding-top: gem(0)
+        padding-bottom: gem(63)
+        margin-top: gem(184)
         &-data
             align-items: flex-start
             h2
                 margin-bottom: gem(80)
         .team
             flex-direction: column
-            left: 0
             &-list
-                margin: 0
-                display: flex
+                width: 100%
                 flex-direction: row
+                margin-right: gem(0)
+                margin-top: 0
                 margin-bottom: gem(80)
-                // &:nth-child(2)
-                //     margin: 0
+                align-items: flex-start
+                img
+                    width: gem(132)
+                    margin-bottom: 0
+                    margin-right: gem(12)
+                &:nth-child(2)
+                    margin: 0
+                    margin-bottom: gem(80)
+                &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+                    margin-top: 0
+                &:last-child
+                    margin-bottom: 0
+                &:nth-child(even)
+                    flex-direction: row-reverse
+                    img
+                        margin-right: 0
+                        margin-left: gem(12)
                 &-data
                     display: flex
                     flex-direction: column
-                    position: relative
-                    top: gem(22)
-                    margin-left: gem(45)
+
+
+.partners
+    padding: gem(100) 0 gem(100) 0
+    .team
+        flex-wrap: wrap
+        width: 100%
+        justify-content: center
+        &-list
+            margin-right: gem(100)
+            margin-top: gem(80)
+            &-data
+                h3
+                    margin-bottom: 0
+        &-list:nth-child(4), &-list:nth-child(8), &-list:last-child
+            margin-right: 0
+        &-list:nth-child(1), &-list:nth-child(2), &-list:nth-child(3), &-list:nth-child(4)
+            margin-top: 0
+
+@media only screen and (max-width : 1024px)
+    .partners
+        .team
+            justify-content: space-between
+            &-list
+                margin-right: 0
+                margin-top: gem(100)
+            &-list:nth-child(3), &-list:nth-child(4)
+                margin-top: gem(100)
+            &-list:nth-child(1), &-list:nth-child(2)
+                margin-top: 0
+@media only screen and (max-width : 480px)
+    .partners
+        padding-top: gem(63)
+        padding-bottom: gem(204)
+        h2
+            margin-bottom: gem(80)
+        .team
+            flex-direction: row
+            flex-wrap: wrap
+            align-items: flex-start
+            &-list
+                width: gem(132)
+                height: gem(242)
+                flex-direction: column
+                margin: gem(0) !important
+                margin-bottom: 0 !important
+                margin-top: gem(20) !important
+                align-items: center
+                img
+                    width: gem(132)
+                    margin-bottom: 0
+                    margin-right: gem(12)
+                &:nth-child(1), &:nth-child(2)
+                    margin-top: 0 !important
+                &:nth-child(even)
+                    flex-direction: column
+                    img
+                        margin-right: 0
+                        margin-left: 0
+                &-data
+                    display: flex
+                    flex-direction: column
+                    h3
+                        margin-top: gem(20)
+                    
 
 .elipse_advisor
     display: flex
@@ -2402,6 +2668,7 @@ footer
 @media only screen and (max-width : 480px)
     .elipse_advisor
         top: gem(11200)
+
 
 .whitepaper
     width: gem(125)
