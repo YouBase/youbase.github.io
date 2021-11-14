@@ -22,11 +22,8 @@
     <meta name="theme-color" content="#fff">
     <!-- Custom Browsers Color End -->
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-   
     <main>
         <div class="mobile_menu">
             <div class="window_header">
@@ -39,55 +36,36 @@
                 <img src="./image/bg_grid.svg" alt="">
             </div>
         </div>
-  
         <header>
-            <div class="topnav">
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
-            <div class="logo"><a href="#"><img src="./image/logo.svg" alt="logo"></a></div>
-            <div class="topnav">
-                <div id="myLinks">
-                    <a href="info.html"><div class="button-1 purple" id="butopen">Home</div></a>
-                    <a href="careers.html"><div class="button-1 purple" id="butopen">Cortex & Web3</div></a>
-                  <a href="#"></a>
-                  <a href="https://twitter.com/app_cortex" target="blank" class="social-icon">
-                    <img src="./image/Twitter.svg" class="icon_twit" alt="twitter">
-                </a>
-                <a href="https://t.me/cortex_app" target="blank" class="social-icon">
-                    <img src="./image/Vector.svg" class="icon_tel" alt="telegram">
-                </a>
-                <a href="https://crtx.medium.com/" target="blank" class="social-icon">
-                    <img src="./image/medium.svg" class="icon_medium" alt="medium">
-                </a>
-                <a href="https://drive.google.com/file/d/1-FrwQLepJU5yOWGcyJGWUjUt73KZor_A/view?usp=sharing" target="_blank" class="button-1 whitepaper"> <span>Whitepaper</span></a>
+            <nav class="navbar">
+                <!-- LOGO -->
+                <a href="#"><img src="./image/logo.svg" alt="brand"></a>
+                <!-- NAVIGATION MENU -->
+                <div class="left">
+                   <ul class="nav-links">
+                  <!-- USING CHECKBOX HACK -->
+                      <input type="checkbox" id="checkbox_toggle" />
+                      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                  <!-- NAVIGATION MENUS -->
+                         <div class="menunav">
+                            <li><a href="#"></a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="info.html">Cortex & Web3</a></li>
+                            <li><a href="careers.html">Hiring</a></li>
+                         </div>
+                    </ul>
+                    <a href="#"></a>
                 </div>
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
-          
-            <div class="social row">
-                <a href="https://twitter.com/app_cortex" target="blank" class="social-icon">
-                    <img src="./image/Twitter.svg" class="icon_twit" alt="twitter">
-                </a>
-                <a href="https://t.me/cortex_app" target="blank" class="social-icon">
-                    <img src="./image/Vector.svg" class="icon_tel" alt="telegram">
-                </a>
-                <a href="https://crtx.medium.com/" target="blank" class="social-icon">
-                    <img src="./image/medium.svg" class="icon_medium" alt="medium">
-                </a>
-                <a href="https://drive.google.com/file/d/1-FrwQLepJU5yOWGcyJGWUjUt73KZor_A/view?usp=sharing" target="_blank" class="button-1 whitepaper"> <span>Whitepaper</span></a>
-            </div>
+                <div class="right">
+                    <a href="https://drive.google.com/file/d/1-FrwQLepJU5yOWGcyJGWUjUt73KZor_A/view?usp=sharing" target="_blank" class="button-1 whitepaper"> <span>Whitepaper</span></a>
+                </div>
+                </nav>
         </header>
         <section class="hiring" id="hero">
             <div class="container">
                 <div class="hiring-column">
                     <div class="hiring-left">
-                        <br>
+                        <div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
                         <h3 class="title-h3">Interested in Joining Our Team?</h3>
                            <div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
                         <p class="desc-1">Cortex is bringing a consistent and coherent structure to the metaverse. Our goal at Cortex is to allow anyone to build and achieve the benefits of web3, like controlling your entire digital and online presence, from value to data, to web location and even infrastructure. We are looking for a front-end developer. Great opportunity to build the future of Web3.</p>
@@ -195,6 +173,5 @@
 <script src="js/g-form/g-form2.js"></script>
 <!-- include additional scripts here AFTER app scripts will run -->
 </body>
-
 </html>
 
