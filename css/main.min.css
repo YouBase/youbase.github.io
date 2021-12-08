@@ -98,6 +98,7 @@ buttonblock1,a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,
 body {
     background-color:#131533;
     margin: 0px;
+    
 }
 .navbar {
     display: flex;
@@ -122,7 +123,7 @@ body {
     div.left { width:25%;
     }
     .navbar{
-        width:;
+        width:100%;
 
     }
     .buttonblock1{
@@ -149,7 +150,6 @@ body {
        width:50%;
        height:auto;
        justify-content: flex-end;
-       font-family:"/gilro"
        
    }
    .button{
@@ -190,14 +190,14 @@ body {
    /* LOGO */
    
    /* NAVBAR MENU */
-   .menunav {
+   .menu {
     display: flex;
     text-align: right;
     gap: 1em;
-    font-size: 18px;
+    
     margin: 50px;
    }
-   .menunav li:hover {
+   .menu li:hover {
     background-color: #131533;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -207,36 +207,10 @@ body {
                 0 0 5px #0038c8;
     }
 
-   .menunav li {
+   .menu li {
     padding: 5px 14px;
    }
-   /* DROPDOWN MENU */
-   .services {
-    position: relative; 
-   }
-   .dropdown {
-    background-color:#131533;
-    padding: 1em 0;
-    position: absolute; /*WITH RESPECT TO PARENT*/
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-   }
-   .dropdown li + li {
-    margin-top: 10px;
-   }
-   .dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-   }
-   .dropdown li:hover {
-    background-color: #291a73;
-   }
-   .services:hover .dropdown {
-    display: block;
-   }
-   /*RESPONSIVE NAVBAR MENU STARTS*/
+/*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
 input[type=checkbox]{
     display: none;
@@ -246,26 +220,39 @@ input[type=checkbox]{
     display: none;
     font-size: 24px;
     user-select: none;
-    margin:50px;
     color:#fff;
    }
    /* APPLYING MEDIA QUERIES */
    @media (max-width: 768px) {
-   .menunav { 
+   .menu{ 
     display:none;
     position: absolute;
     background-color:#131533;
     right: 0;
     left: 0;
-    text-align: center;
+    text-align: left;
     padding: 16px 0;
+    z-index:100;
+    width:100%;
+    margin:0;
    }
-   .menunav li:hover {
+   .button{
+       font-size:14px !important;
+       width:40%;
+   }
+   .button1{
+       margin-left:0;
+       font-size:14px !important;
+       width:40%;
+       text-align: center;
+   }
+   .menu li:hover {
     display: inline-block;
-    background-color:#131533;
-    transition: 0.3s ease;
+    background-color:none;
+    transition: none;
+    box-shadow: none;
    }
-   .menunav li + li {
+   .menuli + li {
     margin-top: 12px;
    }
    input[type=checkbox]:checked ~ .menu{
@@ -280,12 +267,10 @@ input[type=checkbox]{
     transform: translateX(35%);
    }
    .dropdown li:hover {
-    background-color: #3313b4;
+    background-color: #131533;
    }
    }
-   
-   
-.hiring-column{
+   .hiring-column{
     display:flex;
 }
 .hiring-left{
@@ -293,7 +278,6 @@ input[type=checkbox]{
     margin-right:auto;
     flex-direction: column; 
 }
-
 header::after{content:"";height:.01rem;width:100%;position:absolute;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;top:.67rem;z-index:1;background:-o-linear-gradient(359.7deg,#0038c8 -84.16%,#8d00d3 98.46%),#0038c8;background:linear-gradient(90.3deg,#0038c8 -84.16%,#8d00d3 98.46%),#0038c8;opacity:.3}header .logo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-left:.2rem}header .logo a{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:1.2rem}header .logo a img{width:1.2rem}
 
   
