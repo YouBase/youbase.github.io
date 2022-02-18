@@ -1,0 +1,29 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.intro {
+  font-family: 'Montserrat Alternates', sans-serif;
+
+  @media (min-width: 480px) {
+    .title {
+      font-size: small;
+    }
+  }
+}
+
+.partners {
+  font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+.news {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.demo {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.careers-head {
+  font-family: 'Montserrat Alternates', sans-serif;
+}

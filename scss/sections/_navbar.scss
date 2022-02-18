@@ -1,0 +1,70 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.menu {
+  @include gradient;
+  font-family: 'Montserrat Alternates', sans-serif;
+
+  li {
+    a {
+      color: $danger;
+      text-transform: capitalize;
+      font-weight: 500;
+
+    }
+
+  }
+}
+
+.icon {
+  width: $icon-size;
+  height: $icon-size;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: $icon-size*$border-radius;
+    overflow: hidden;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: $icon-size*$border-radius;
+  }
+
+  i {
+    position: relative;
+    color: $white;
+    font-size: 20px;
+    transition: all 0.25s ease;
+    padding: .3rem;
+  }
+}
+
+.icon {
+  &::before {
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 0 1px $white;
+  }
+
+  &:hover::before {
+    box-shadow: inset 0 0 0 $icon-size $white;
+  }
+}
