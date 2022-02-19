@@ -1,0 +1,16 @@
+@use '../custom'as *;
+
+.info {
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: lighter;
+}
+
+
+.border-animation {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border: 0.55rem solid $white;
+}
+

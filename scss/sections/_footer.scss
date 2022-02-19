@@ -1,0 +1,50 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.footer {
+    padding-top: 1rem;
+    background: $footer;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: light;
+}
+    .footer-center{
+        padding-left:9.5rem;
+        padding-top:2rem;
+}
+.footer-right{
+    padding-left:5rem;
+    padding-top:2rem;
+}
+.footer-left{
+    padding-left:6rem;
+    padding-top:2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-center{
+      padding-left:7rem;
+      
+    
+    }
+    .footer-left{
+        padding-left:.03rem;
+
+    }
+    .footer-right{
+        padding-left:.03rem; 
+    }
+    .footer-links{
+        padding-top:3rem !important;
+    }
+    .footer-link{
+        padding-top:1rem;
+    }
+  
+}
+
+  @media only screen and (max-width: 450px){
+      .footer-right{
+          padding-left:7rem;
+  }
+ 
+  }

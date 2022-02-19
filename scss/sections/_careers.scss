@@ -1,0 +1,16 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+
+.careers {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.careers-head {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.careers-text{
+    font-size:18px;
+    font-weight: lighter;
+}

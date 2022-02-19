@@ -1,0 +1,58 @@
+// #########################################################
+//            COPY BOOTSTRAP VARIABLES YOU NEED TO OVERIDE INTO THIS FILE            
+//              WE HAVE AFEW OVERIDES ALREADY
+// #########################################################
+
+// COPY VARIABLES YOU WANT TO OVRIDE HERE
+// scss-docs-start gray-color-variables
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+// scss-docs-end gray-color-variables
+
+
+// scss-docs-start color-variables
+$dark-blue: #131533;
+$dark-purple: #7010EA;
+$light-purple: #3B0158;
+$blue: #7D7Dff;
+$indigo: #cc67ff;
+$purple: #b5b5ff;
+$mid-blue: #020103;
+$footer: #151414;
+
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fc7937;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary: $dark-blue;
+$secondary: $light-purple;
+$success: $dark-purple;
+$info: $blue;
+$warning: $indigo;
+$danger: $purple;
+$light: $mid-blue;
+$dark: $orange;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start colors-map
+
+$border-radius: 0.7; //15% = 0.15, 50% = 0.50 etc.
+$icon-size:30px;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,32 @@
+@use '../custom'as *;
+@use '../components/mixins'as *;
+/* Slider */
+
+
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.brand-carousel {
+    background: white;
+
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.owl-dot.active {
+    background-color: white !important;
+}
