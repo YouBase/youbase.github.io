@@ -11260,6 +11260,7 @@ textarea.form-control-lg {
 .owl-dots {
   text-align: center;
   margin-top: 4%;
+  color: white !important;
 }
 
 .owl-dot {
@@ -11269,10 +11270,12 @@ textarea.form-control-lg {
   opacity: 0.8;
   border-radius: 50%;
   margin: 0 5px;
+  background-color: grey !important;
 }
 
 .owl-dot.active {
   background-color: white !important;
+  color: white !important;
 }
 
 .menu {
