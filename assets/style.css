@@ -11126,7 +11126,6 @@ textarea.form-control-lg {
   border: 0.1rem solid white;
   background-color: #fc7937;
   color: #fff;
-  border-radius: 20px;
 }
 .btn-rounded:hover {
   background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
@@ -11216,21 +11215,6 @@ textarea.form-control-lg {
     justify-content: center;
   }
 }
-.hmn-button {
-  position: relative;
-  padding: 0.2rem 0.4rem;
-  font-weight: 500;
-  margin: 0;
-  border: 0.1rem solid white;
-  background-color: #7010EA;
-  color: #fff;
-  border-radius: 20px;
-}
-.hmn-button:hover {
-  background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
-  color: #fff;
-}
-
 .intro {
   font-family: "Montserrat Alternates", sans-serif;
 }
@@ -11256,36 +11240,12 @@ textarea.form-control-lg {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-.hero-title {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  padding-top: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-text {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-}
-
 .intro {
   background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
 }
 
 .web3 {
   background: linear-gradient(90deg, #131533 0%, rgba(59, 1, 88, 0.393995098) 50%, #fc7937 100%);
-}
-
-.banner {
-  color: -webkit-linear-gradient(90deg, #131533 0%, #3b0158 50%, #fc7937 100%);
-  -webkit-text-fill-color: transparent;
-}
-
-.discord {
-  padding-left: 200px;
 }
 
 /* Slider */
@@ -11371,10 +11331,6 @@ textarea.form-control-lg {
 }
 .icon:hover::before {
   box-shadow: inset 0 0 0 30px #fff;
-}
-
-.nav-social {
-  justify-content: end;
 }
 
 .news {
@@ -11500,20 +11456,6 @@ textarea.form-control-lg {
   width: 6rem;
   height: 6rem;
   border: 0.55rem solid #fff;
-}
-
-.info-title {
-  background-image: linear-gradient(90deg, #fc8234 0%, #f93c4c 100%);
-  background-clip: text;
-  color: transparent;
-}
-
-.fill-grad {
-  background-image: linear-gradient(90deg, #fc8234 0%, #f93c4c 100%);
-}
-
-.hmn-box {
-  padding-left: 100px;
 }
 
 .careers {

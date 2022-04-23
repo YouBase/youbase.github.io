@@ -9,6 +9,7 @@
   border: 0.1rem solid white;
   background-color: $orange;
   color: $white;
+  border-radius: 20px;
 
   &:hover {
     @include gradient;
@@ -112,4 +113,20 @@
     justify-content: center;
   }
 
+}
+
+.hmn-button{
+  position: relative;
+  padding: 0.2rem 0.4rem;
+  font-weight: 500;
+  margin: 0;
+  border: 0.1rem solid white;
+  background-color: $success;
+  color: $white;
+  border-radius: 20px;
+
+  &:hover {
+    @include gradient;
+    color: $white;
+  }
 }
