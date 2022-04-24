@@ -11120,13 +11120,13 @@ textarea.form-control-lg {
 }
 .btn-rounded {
   position: relative;
-  padding: 0.2rem 0.4rem;
-  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
   margin: 0;
   border: 0.1rem solid white;
   background-color: #fc7937;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .btn-rounded:hover {
   background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
@@ -11181,7 +11181,7 @@ textarea.form-control-lg {
 
   .btn-nav {
     display: flex;
-    width: 15%;
+    width: 20%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -11211,7 +11211,7 @@ textarea.form-control-lg {
 
   .btn-nav {
     display: flex;
-    width: 35%;
+    width: 40%;
     align-items: center;
     justify-content: center;
   }
@@ -11219,7 +11219,7 @@ textarea.form-control-lg {
 .hmn-button {
   position: relative;
   padding: 0.2rem 0.4rem;
-  font-weight: 500;
+  font-weight: 200;
   margin: 0;
   border: 0.1rem solid white;
   background-color: #7010EA;
@@ -11229,6 +11229,48 @@ textarea.form-control-lg {
 .hmn-button:hover {
   background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
   color: #fff;
+}
+
+.btn-rounded1 {
+  position: relative;
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid white;
+  background-color: #fc7937;
+  color: #fff;
+  border-radius: 50px;
+}
+.btn-rounded1:hover {
+  background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
+  color: #fff;
+}
+
+.btn-nav1 {
+  text-decoration: none;
+  font-size: 1.3rem;
+  border: 1px solid #f1f1f1;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-nav1:hover {
+  box-shadow: 1px 1px 25px 10px rgba(248, 212, 146, 0.4);
+  color: #fff;
+}
+
+.btn-nav1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: linear-gradient(120deg, transparent, rgba(248, 201, 146, 0.4), transparent);
+  transition: all 650ms;
+  color: white;
+}
+
+.btn-nav1:hover:before {
+  left: 100%;
 }
 
 .intro {
@@ -11258,8 +11300,8 @@ textarea.form-control-lg {
 
 .hero-title {
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 3.5rem;
   padding-top: 30px;
   display: flex;
   justify-content: center;
@@ -11267,8 +11309,8 @@ textarea.form-control-lg {
 
 .hero-text {
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 100;
-  font-size: 20px;
+  font-weight: 200;
+  font-size: 1.5rem;
 }
 
 .intro {
@@ -11285,7 +11327,15 @@ textarea.form-control-lg {
 }
 
 .discord {
-  padding-left: 200px;
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  padding-left: 5rem;
+}
+
+.hmn {
+  font-weight: 500;
+  font-style: bold;
 }
 
 /* Slider */
@@ -11373,8 +11423,9 @@ textarea.form-control-lg {
   box-shadow: inset 0 0 0 30px #fff;
 }
 
-.nav-social {
-  justify-content: end;
+.social-nav {
+  padding-left: 3rem;
+  display: flex;
 }
 
 .news {
@@ -11442,6 +11493,11 @@ textarea.form-control-lg {
   color: linear-gradient(90deg, #131533 0%, #3b0158 50%, #fc7937 100%);
 }
 
+.team-sub {
+  font-weight: 100;
+  font-size: 1.25rem;
+}
+
 .footer {
   padding-top: 1rem;
   background: #151414;
@@ -11502,18 +11558,31 @@ textarea.form-control-lg {
   border: 0.55rem solid #fff;
 }
 
-.info-title {
-  background-image: linear-gradient(90deg, #fc8234 0%, #f93c4c 100%);
-  background-clip: text;
-  color: transparent;
-}
-
 .fill-grad {
   background-image: linear-gradient(90deg, #fc8234 0%, #f93c4c 100%);
 }
 
-.hmn-box {
-  padding-left: 100px;
+.update-banner {
+  font-size: 1.5rem;
+  color: #fc7937;
+  font-weight: 400;
+}
+
+.update-banner a {
+  color: #fc7937;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  color: #b5b5ff;
+}
+
+.text-info {
+  font-size: 3rem;
+}
+
+.card-title {
+  font-weight: 200;
 }
 
 .careers {
@@ -11536,6 +11605,11 @@ textarea.form-control-lg {
 
 .demo-btn {
   font-weight: 700;
+}
+
+.demo-sub {
+  font-weight: 200;
+  font-size: 1.5rem;
 }
 
 .partners {

@@ -12,5 +12,12 @@
     -webkit-text-fill-color: transparent;
   }
   .discord{
-      padding-left:200px;
+      display: flex;
+      align-items: center;
+      width: 10rem;
+      padding-left: 5rem;
+  }
+  .hmn{
+      font-weight: 500;
+      font-style: bold;
   }
