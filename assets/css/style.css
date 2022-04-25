@@ -11219,7 +11219,7 @@ textarea.form-control-lg {
 .hmn-button {
   position: relative;
   padding: 0.2rem 0.4rem;
-  font-weight: 200;
+  font-weight: 500;
   margin: 0;
   border: 0.1rem solid white;
   background-color: #7010EA;
@@ -11333,9 +11333,15 @@ textarea.form-control-lg {
   padding-left: 5rem;
 }
 
-.hmn {
-  font-weight: 500;
-  font-style: bold;
+.hmn-text {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: start;
 }
 
 /* Slider */
@@ -11577,10 +11583,6 @@ textarea.form-control-lg {
   color: #b5b5ff;
 }
 
-.text-info {
-  font-size: 3rem;
-}
-
 .card-title {
   font-weight: 200;
 }
@@ -11610,6 +11612,11 @@ textarea.form-control-lg {
 .demo-sub {
   font-weight: 200;
   font-size: 1.5rem;
+}
+
+.demo-text {
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .partners {
