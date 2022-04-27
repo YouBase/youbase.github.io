@@ -11219,12 +11219,13 @@ textarea.form-control-lg {
 .hmn-button {
   position: relative;
   padding: 0.2rem 0.4rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
   border: 0.1rem solid white;
   background-color: #7010EA;
   color: #fff;
   border-radius: 20px;
+  font-style: none;
 }
 .hmn-button:hover {
   background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
