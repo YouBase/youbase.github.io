@@ -118,12 +118,14 @@
 .hmn-button{
   position: relative;
   padding: 0.2rem 0.4rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
   border: 0.1rem solid white;
   background-color: $dark-purple;
   color: $white;
   border-radius: 20px;
+  font-style: none;
+
 
   &:hover {
     @include gradient;
