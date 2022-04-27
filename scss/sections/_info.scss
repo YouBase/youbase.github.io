@@ -14,3 +14,28 @@
     border: 0.55rem solid $white;
 }
 
+
+.fill-grad{
+    background-image: linear-gradient(90deg, rgba(252,130,52,1) 0%, rgba(249,60,76,1) 100%);
+}
+
+.update-banner{
+    font-size: 1.5rem;
+    color:$dark;
+    font-weight: 400;
+}
+
+.update-banner a{
+    color:$dark;
+}
+
+.card-text{
+    font-size:1.5rem;
+    color:$danger;
+}
+
+
+
+.card-title{
+    font-weight: 200;
+}

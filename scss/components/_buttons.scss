@@ -3,12 +3,13 @@
 
 .btn-rounded {
   position: relative;
-  padding: 0.2rem 0.4rem;
-  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
   margin: 0;
   border: 0.1rem solid white;
   background-color: $orange;
   color: $white;
+  border-radius: 50px;
 
   &:hover {
     @include gradient;
@@ -69,7 +70,7 @@
 
   .btn-nav {
     display: flex;
-    width: 15%;
+    width: 20%;
   }
 
 }
@@ -107,9 +108,70 @@
 
   .btn-nav {
     display: flex;
-    width: 35%;
+    width: 40%;
     align-items: center;
     justify-content: center;
   }
 
+}
+
+.hmn-button{
+  position: relative;
+  padding: 0.2rem 0.4rem;
+  font-weight: 500;
+  margin: 0;
+  border: 0.1rem solid white;
+  background-color: $dark-purple;
+  color: $white;
+  border-radius: 20px;
+
+  &:hover {
+    @include gradient;
+    color: $white;
+  }
+}
+.btn-rounded1 {
+  position: relative;
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid white;
+  background-color: $orange;
+  color: $white;
+  border-radius: 50px;
+
+  &:hover {
+    @include gradient;
+    color: $white;
+  }
+}
+.btn-nav1 {
+  text-decoration: none;
+  font-size: 1.3rem;
+  border: 1px solid rgb(241, 241, 241);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-nav1:hover {
+  box-shadow: 1px 1px 25px 10px rgba(248, 212, 146, 0.4);
+  color: $white;
+}
+
+.btn-nav1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(248, 201, 146, 0.4),
+      transparent);
+  transition: all 650ms;
+  color: white;
+}
+
+.btn-nav1:hover:before {
+  left: 100%;
 }

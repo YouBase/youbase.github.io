@@ -6,3 +6,23 @@
 .web3{
     background:linear-gradient(90deg, rgba(19,21,51,1) 0%, rgba(59,1,88,0.39399509803921573) 50%, rgba(252,121,55,1) 100%);
 }
+.banner{
+    color: -webkit-linear-gradient(90deg, rgba(19, 21, 51, 1) 0%, rgba(59, 1, 88, 1) 50%, rgba(252, 121, 55, 1) 100%);
+    
+    -webkit-text-fill-color: transparent;
+  }
+  .discord{
+      display: flex;
+      align-items: center;
+      width: 10rem;
+      padding-left: 5rem;
+  }
+  .hmn-text{
+      font-weight: 300;
+      font-size: 1.5rem;
+  }
+  .hero-title{
+      font-size: 2.5rem;
+      display: flex;
+      justify-content: start;
+  }
