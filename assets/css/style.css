@@ -11205,6 +11205,14 @@ textarea.form-control-lg {
     display: none;
   }
 
+  .btn-nav2:before {
+    display: none;
+  }
+
+  .btn-nav2 {
+    display: flex;
+  }
+
   .btn-rounded {
     display: flex;
   }
@@ -11624,6 +11632,14 @@ textarea.form-control-lg {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: lighter;
 }
+
+.faq {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.answers {
+  font-family: "Josefin Sans", sans-serif;
+}
 .circle {
   padding: 13px 20px;
   border-radius: 50%;
@@ -11694,3 +11710,4 @@ textarea.form-control-lg {
 }
 
 /*# sourceMappingURL=style.css.map */
+

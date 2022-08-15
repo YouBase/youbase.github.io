@@ -1,7 +1,9 @@
 @use '../custom'as *;
 @use '../components/mixins'as *;
 
-.partners {
+.faq {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: lighter;
+}
+.answers{
+    font-family: 'Josefin Sans', sans-serif;
 }
