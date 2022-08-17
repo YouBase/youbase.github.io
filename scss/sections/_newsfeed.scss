@@ -1,4 +1,5 @@
 @use '../custom' as *;
+@use '../components/mixins'as *;
   
   .news{
     font-family: 'Montserrat Alternates', sans-serif;

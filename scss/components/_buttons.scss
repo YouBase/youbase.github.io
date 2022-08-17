@@ -16,7 +16,14 @@
     color: $white;
   }
 }
+.btn-nav2:before {
+  display:none;
+}
+.btn-nav2 {
+  display: flex;
+  color: white;
 
+}
 .btn-nav {
   text-decoration: none;
   border: 1px solid rgb(241, 241, 241);

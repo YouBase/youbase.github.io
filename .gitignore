@@ -1,1 +1,4 @@
 .DS_Store
+.vscode
+./assets/css/theming-kit.html
+node_modules
