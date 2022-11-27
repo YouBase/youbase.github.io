@@ -11589,13 +11589,11 @@ textarea.form-control-lg {
 }
 
 .card-text {
-  font-size: 1.5rem;
+  font-size: 18px;
   color: #b5b5ff;
 }
 
-.card-title {
-  font-weight: 200;
-}
+
 
 .careers {
   font-family: "Montserrat Alternates", sans-serif;
@@ -11672,6 +11670,9 @@ textarea.form-control-lg {
   top: 0;
 }
 
+.resources {
+  background: linear-gradient(to right, rgba(#131533, 0.95), rgba(#5c008A, 0.95));
+}
 
 .timeline div {
   padding: 0;
@@ -11738,7 +11739,7 @@ textarea.form-control-lg {
     align-items: center;
     height: 100%;
     position: relative;
-    color: #222;
+    color: white;
     border-bottom: 4px solid #fc7937;
   }
   
