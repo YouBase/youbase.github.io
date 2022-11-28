@@ -11227,14 +11227,15 @@ textarea.form-control-lg {
 .hmn-button {
   position: relative;
   padding: 0.2rem 0.4rem;
-  font-weight: 400;
+  font-weight: 200;
   margin: 0;
   border: 0.1rem solid white;
-  background-color: #7010EA;
+  background-color: #7b46ff;
   color: #fff;
   border-radius: 20px;
-  font-style: none;
+  text-decoration: none !important;
 }
+
 .hmn-button:hover {
   background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
   color: #fff;
@@ -11309,9 +11310,9 @@ textarea.form-control-lg {
 
 .hero-title {
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 500;
-  font-size: 3.5rem;
-  padding-top: 30px;
+  font-weight: 300;
+  font-size: 2 rem;
+  padding-top: 45px;
   display: flex;
   justify-content: center;
 }
@@ -11588,13 +11589,11 @@ textarea.form-control-lg {
 }
 
 .card-text {
-  font-size: 1.5rem;
+  font-size: 18px;
   color: #b5b5ff;
 }
 
-.card-title {
-  font-weight: 200;
-}
+
 
 .careers {
   font-family: "Montserrat Alternates", sans-serif;
@@ -11671,6 +11670,9 @@ textarea.form-control-lg {
   top: 0;
 }
 
+.resources {
+  background: linear-gradient(to right, rgba(#131533, 0.95), rgba(#5c008A, 0.95));
+}
 
 .timeline div {
   padding: 0;
@@ -11709,5 +11711,66 @@ textarea.form-control-lg {
   top: calc(50% - 3px);
 }
 
+.hmn-img{
+  max-width: 15rem;
+  padding-left: 4rem;
+  padding-top: 2rem;
+    
+}
+.section h1 {
+    font-size: 37px;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+  .section .box-information {
+    height: 115px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+  .section .box-information a {
+    font-size: 21px;
+    line-height: 29px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    color: white;
+    border-bottom: 4px solid #fc7937;
+  }
+  
+  .section .box-information a:hover {
+    transition: all, 0.4s, ease;
+    background: linear-gradient(135deg, #131533 1%, #3b0158 44%, #fc7937 55%, #d24540 100%);
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 768px) {
+    .section h1 {
+      margin-bottom: 8px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .section .box-information {
+      margin: 0 5px 30px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .section .box-information {
+      height: 85px;
+      margin-bottom: 15px;
+    }
+  }
+
+  
 /*# sourceMappingURL=style.css.map */
 
