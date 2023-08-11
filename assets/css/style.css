@@ -3933,6 +3933,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  font-weight: 400;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -11138,6 +11139,7 @@ textarea.form-control-lg {
   border: 1px solid #f1f1f1;
   position: relative;
   overflow: hidden;
+  font-weight: 400;
 }
 
 .btn-nav:hover {
@@ -11198,6 +11200,7 @@ textarea.form-control-lg {
     width: 25%;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -11283,8 +11286,14 @@ textarea.form-control-lg {
   left: 100%;
 }
 
+.button-text{
+ font-weight:300;
+
+}
 .intro {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95))
 }
 @media (min-width: 480px) {
   .intro .title {
@@ -11293,39 +11302,41 @@ textarea.form-control-lg {
 }
 
 .partners {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .news {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .demo {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .careers-head {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero-title {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 300;
-  font-size: 2 rem;
-  padding-top: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
 }
+@media (max-width: 767.98px){
+  .hero-title {
+font-size: 2rem;
+}}
+
 
 .hero-text {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 200;
-  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
 }
 
-.intro {
-  background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
-}
 
 .web3 {
   background: linear-gradient(90deg, #131533 0%, rgba(59, 1, 88, 0.393995098) 50%, #fc7937 100%);
@@ -11348,11 +11359,7 @@ textarea.form-control-lg {
   font-size: 1.5rem;
 }
 
-.hero-title {
-  font-size: 2.5rem;
-  display: flex;
-  justify-content: start;
-}
+
 
 /* Slider */
 .section-padding {
@@ -11386,7 +11393,7 @@ textarea.form-control-lg {
 
 .menu {
   background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .menu li a {
   color: #b5b5ff;
@@ -11445,7 +11452,7 @@ textarea.form-control-lg {
 }
 
 .news {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
 }
@@ -11489,7 +11496,7 @@ textarea.form-control-lg {
   }
 }
 .signup {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(90deg, #131533 0%, #3b0158 50%, #fc7937 100%);
   padding: 8rem;
 }
@@ -11501,7 +11508,7 @@ textarea.form-control-lg {
 }
 .team {
   background: linear-gradient(to right, rgba(19, 21, 51, 0.95), rgba(92, 0, 138, 0.95));
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: linear-gradient(90deg, #131533 0%, #3b0158 50%, #fc7937 100%);
 }
 
@@ -11517,7 +11524,7 @@ textarea.form-control-lg {
 .footer {
   padding-top: 1rem;
   background: #151414;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: light;
 }
 
@@ -11563,7 +11570,7 @@ textarea.form-control-lg {
   }
 }
 .info {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
 }
 
@@ -11596,7 +11603,7 @@ textarea.form-control-lg {
 
 
 .careers {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .careers-head {
@@ -11610,7 +11617,7 @@ textarea.form-control-lg {
 }
 
 .demo {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .demo-btn {
@@ -11628,16 +11635,16 @@ textarea.form-control-lg {
 }
 
 .partners {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
 }
 
 .faq {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .answers {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .circle {
   padding: 13px 20px;
@@ -11649,7 +11656,7 @@ textarea.form-control-lg {
 }
 .roadmap{
   background-color: #cc67ff;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .how-it-works.row .col-2 {
   align-self: stretch;
@@ -11718,14 +11725,14 @@ textarea.form-control-lg {
 }
 .section h1 {
     font-size: 37px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   
   .section .box-information {
     height: 115px;
     border: 1px solid #dbdbdb;
     margin-bottom: 30px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   
   .section .box-information a {
@@ -11769,7 +11776,22 @@ textarea.form-control-lg {
       margin-bottom: 15px;
     }
   }
-
+  .btn-card {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px; /* Use a larger value to make it look rounded */
+    background-color: #fc7937;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-card:hover {
+    background-color: #7010EA;
+  }
+  .btn-title {
+    font-weight: 400;
+  }
   
 /*# sourceMappingURL=style.css.map */
 
