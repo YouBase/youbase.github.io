@@ -1,6 +1,7 @@
 <svg width="145" height="144" viewBox="0 0 145 144" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<circle cx="72.5001" cy="72" r="72" fill="url(#pattern0)"/>
-<circle cx="72.5001" cy="72" r="72" fill="url(#paint0_linear_1210_1980)" fill-opacity="0.8"/>
+<path d="M144.5 72C144.5 111.765 112.265 144 72.5001 144C32.7356 144 0.500122 111.765 0.500122 72C0.500122 32.2355 32.7356 0 72.5001 0C112.265 0 144.5 32.2355 144.5 72Z" fill="url(#pattern0)"/>
+<path d="M144.5 72C144.5 111.765 112.265 144 72.5001 144C32.7356 144 0.500122 111.765 0.500122 72C0.500122 32.2355 32.7356 0 72.5001 0C112.265 0 144.5 32.2355 144.5 72Z" fill="url(#paint0_linear_1210_1980)" fill-opacity="0.3"/>
+<path d="M144.5 72C144.5 111.765 112.265 144 72.5001 144C32.7356 144 0.500122 111.765 0.500122 72C0.500122 32.2355 32.7356 0 72.5001 0C112.265 0 144.5 32.2355 144.5 72Z" fill="black" fill-opacity="0.2"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_1210_1980" transform="translate(0 0.375) scale(0.00139665)"/>
