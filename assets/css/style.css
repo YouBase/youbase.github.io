@@ -11777,10 +11777,10 @@ font-size: 2rem;
     }
   }
   .btn-card {
-    color: white;
+    color: black;
     border: 1px solid white;
     border-radius: 50px; /* Use a larger value to make it look rounded */
-    background-color: #fc7937;
+    background-color: white;
     padding: 10px 20px;
     text-decoration: none;
     transition: background-color 0.3s ease;
